@@ -1,166 +1,3 @@
-<<<<<<< HEAD
-import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-
-function Consorcio() {
-  return (
-    <>
-<Helmet>
-  <title>
-    Consórcio Imobiliário e Veículos | Crédito Multi Bancos
-  </title>
-
-  <meta
-    name="description"
-    content="Consórcio para imóveis, veículos e patrimônio com orientação especializada e planejamento financeiro."
-  />
-  </Helmet>
-    <div style={{ fontFamily: "Arial, sans-serif", color: "#1a1a1a" }}>
-
-      {/* HERO */}
-      <section style={{
-        background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
-        color: "white",
-        padding: "80px 20px",
-        textAlign: "center"
-      }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h1 style={{
-            fontSize: "42px",
-            lineHeight: "1.2",
-            marginBottom: "20px",
-            color: "white"
-          }}>
-            Consórcio Inteligente para Conquistar seus Objetivos
-          </h1>
-
-          <p style={{
-            fontSize: "20px",
-            color: "#dbeafe",
-            marginBottom: "30px"
-          }}>
-            Planeje a compra do seu imóvel, veículo ou patrimônio com estratégia e organização financeira.
-          </p>
-
-          <a
-            href="https://wa.me/5511933739876"
-            target="_blank"
-            style={{
-              background: "#25D366",
-              color: "white",
-              padding: "16px 28px",
-              borderRadius: "8px",
-              textDecoration: "none",
-              fontWeight: "bold"
-            }}
-          >
-            Simular no WhatsApp
-          </a>
-        </div>
-      </section>
-
-      {/* BENEFÍCIOS */}
-      <section style={{
-        padding: "70px 20px",
-        background: "#f8fafc"
-      }}>
-        <div style={{
-          maxWidth: "1100px",
-          margin: "0 auto"
-        }}>
-          <h2 style={{
-            textAlign: "center",
-            fontSize: "32px",
-            marginBottom: "40px"
-          }}>
-            Vantagens do Consórcio
-          </h2>
-
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))",
-            gap: "20px"
-          }}>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Planejamento financeiro sem juros
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Parcelas acessíveis e programadas
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Opção para imóveis, veículos e serviços
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Atendimento consultivo para escolher a melhor carta
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* CONFIANÇA */}
-      <section style={{ padding: "70px 20px" }}>
-        <div style={{
-          maxWidth: "900px",
-          margin: "0 auto",
-          textAlign: "center"
-        }}>
-          <h2 style={{
-            fontSize: "30px",
-            marginBottom: "20px"
-          }}>
-            Estratégia e Segurança
-          </h2>
-
-          <p style={{
-            fontSize: "18px",
-            lineHeight: "1.8"
-          }}>
-            Conte com orientação profissional para avaliar o melhor consórcio de acordo com seus objetivos e momento financeiro.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA FINAL */}
-      <section style={{
-        background: "#1e3a8a",
-        color: "white",
-        padding: "70px 20px",
-        textAlign: "center"
-      }}>
-        <h2 style={{
-          fontSize: "34px",
-          marginBottom: "20px"
-        }}>
-          Solicite sua simulação agora
-        </h2>
-
-        <a
-          href="https://wa.me/5511933739876"
-          target="_blank"
-          style={{
-            background: "#25D366",
-            color: "white",
-            padding: "16px 28px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "bold"
-          }}
-        >
-          Falar no WhatsApp
-        </a>
-      </section>
-
-    </div>
-    </>
-  );
-}
-
-=======
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
@@ -168,46 +5,207 @@ function Consorcio() {
   return (
     <>
       <Helmet>
-        <title>Consórcio | Sem Juros e Parcelas Acessíveis</title>
-        <meta 
-          name="description" 
-          content="Consórcio para imóveis, veículos e serviços com parcelas acessíveis e sem juros." 
+        <title>Consórcio | Crédito Multi Bancos</title>
+
+        <meta
+          name="description"
+          content="Consórcio para imóveis, veículos e patrimônio com parcelas planejadas e sem juros."
         />
       </Helmet>
 
-      <div style={{ 
-  textAlign: "center", 
-  padding: "40px 20px",
-  maxWidth: "700px",
-  margin: "0 auto"
-}}>
-        <h1 style={{ 
-  fontSize: '28px',
-  lineHeight: '1.3',
-  marginBottom: '20px'
-}}>
-  Consórcio com Parcelas Acessíveis e Sem Juros
-</h1>
+      <div style={{ fontFamily: "Arial, sans-serif" }}>
 
-        <p>
-          O consórcio é uma excelente alternativa para quem deseja adquirir bens
-          de forma planejada, sem juros e com parcelas acessíveis.
-        </p>
+        {/* HERO */}
+        <section style={{
+          background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
+          color: "white",
+          padding: "110px 20px" ,
+          textAlign: "center"
+        }}>
+          <div style={{ maxWidth: "980px", margin: "0 auto" }}>
 
-        <br />
+            <p style={{
+              color: "#93c5fd",
+              fontWeight: "bold",
+              letterSpacing: "1px"
+            }}>
+              CONSTRUA SEU PATRIMÔNIO COM INTELIGÊNCIA
+            </p>
 
-        <a href="https://wa.me/5511933739876" target="_blank">
-          Simular Consórcio
-        </a>
+            <h1 style={{
+              fontSize: "54px",
+              lineHeight: "1.15",
+              margin: "20px 0",
+              color: "white",
+              textShadow: "0 4px 10px rgba(0,0,0,0.18)"
+            }}>
+              Consórcio Inteligente
+              <br />
+              Sem Juros e Planejado
+            </h1>
 
-        <br /><br />
+            <p style={{
+              fontSize: "24px",
+              color: "#dbeafe",
+              marginBottom: "35px"
+            }}>
+              Tenha o poder de compra à vista com parcelas que cabem no seu bolso.
+            </p>
 
-        <Link to="/">Voltar para Home</Link>
+            <a
+              href="https://wa.me/5511933739876"
+              target="_blank"
+              style={{
+                background: "#25D366",
+                color: "white",
+                padding: "18px 34px",
+                borderRadius: "10px",
+                textDecoration: "none",
+                fontWeight: "bold",
+                fontSize: "20px"
+              }}
+            >
+              Montar Meu Plano
+            </a>
+
+          </div>
+        </section>
+
+        {/* BENEFÍCIOS */}
+        <section style={{
+          padding: "80px 20px",
+          background: "#f8fafc"
+        }}>
+          <div style={{
+            maxWidth: "1150px",
+            margin: "0 auto"
+          }}>
+
+            <h2 style={{
+              textAlign: "center",
+              fontSize: "40px",
+              marginBottom: "40px"
+            }}>
+              Vantagens
+            </h2>
+
+            <div style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
+              gap: "25px"
+            }}>
+
+              {[
+                "💸 Fuja das taxas abusivas do financiamento",
+                "📅 Planeje suas conquistas sem sufoco no orçamento",
+                "🏠 Use para imóvel, veículos e outros projetos",
+                "📈 Contrua seu patrimônio de forma segura e eficiente"
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  style={{
+                    background: "white",
+                    padding: "30px",
+                    borderRadius: "18px",
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+                    fontWeight: "bold",
+                    fontSize: "20px",
+                    textAlign: "center"
+                  }}
+                >
+                  {item}
+                </div>
+              ))}
+
+            </div>
+          </div>
+        </section>
+
+        {/* PROCESSO */}
+        <section style={{
+          padding: "80px 20px",
+          textAlign: "center"
+        }}>
+          <h2 style={{
+            fontSize: "40px",
+            marginBottom: "40px"
+          }}>
+            Como Funciona
+          </h2>
+
+          <div style={{
+            maxWidth: "1000px",
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
+            gap: "25px"
+          }}>
+
+            {[
+              "1️⃣ Escolha objetivo",
+              "2️⃣ Simulação ideal",
+              "3️⃣ Entrada no grupo",
+              "4️⃣ Contemplação e uso"
+            ].map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  background: "#eff6ff",
+                  padding: "28px",
+                  borderRadius: "18px",
+                  fontWeight: "bold"
+                }}
+              >
+                {item}
+              </div>
+            ))}
+
+          </div>
+        </section>
+
+        {/* CTA FINAL */}
+        <section style={{
+          background: "#0f172a",
+          color: "white",
+          padding: "80px 20px",
+          textAlign: "center"
+        }}>
+          <h2 style={{
+            fontSize: "42px",
+            color:"white", 
+
+textShadow:"0 4px 10px rgba(0,0,0,0.18)", 
+            marginBottom: "20px"
+          }}>
+            Planeje Seu Próximo Patrimônio
+          </h2>
+
+          <a
+            href="https://wa.me/5511933739876"
+            target="_blank"
+            style={{
+              background: "#25D366",
+              color: "white",
+              padding: "18px 34px",
+              borderRadius: "10px",
+              textDecoration: "none",
+              fontWeight: "bold",
+              fontSize: "20px"
+            }}
+          >
+            Montar Meu Plano
+          </a>
+
+          <div style={{ marginTop: "35px" }}>
+            <Link to="/" style={{ color: "#93c5fd" }}>
+              ← Voltar para Home
+            </Link>
+          </div>
+        </section>
 
       </div>
     </>
   );
 }
 
->>>>>>> 3ccb740b01989aa12f04869fa2f8150bac055d9a
 export default Consorcio;

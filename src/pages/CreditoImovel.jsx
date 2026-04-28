@@ -1,194 +1,3 @@
-<<<<<<< HEAD
-import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-
-function CreditoImovel() {
-  return (
-    <>
-<Helmet>
-  <title>
-    Crédito com Garantia de Imóvel | Crédito Multi Bancos
-  </title>
-
-  <meta
-    name="description"
-    content="Crédito com garantia de imóvel com taxas competitivas, prazos longos e atendimento especializado. Simule em São Paulo ou online para todo Brasil."
-  />
-
-  <meta
-    name="keywords"
-    content="crédito com garantia de imóvel, home equity, empréstimo com garantia, São Paulo"
-  />
-</Helmet>
-    <div style={{ fontFamily: "Arial, sans-serif", color: "#1a1a1a" }}>
-
-      {/* HERO */}
-      <section style={{
-        background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
-        color: "white",
-        padding: "80px 20px",
-        textAlign: "center"
-      }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h1 style={{
-  fontSize: "42px",
-  lineHeight: "1.2",
-  marginBottom: "20px",
-  color: "white",
-  maxWidth: "850px",
-  margin: "0 auto 20px"
-}}>
-            Crédito com Garantia de Imóvel com Taxas Baixas
-            e Prazos Estendidos
-          </h1>
-
-          <p style={{
-            fontSize: "20px",
-            color: "#dbeafe",
-            marginBottom: "30px"
-          }}>
-            Utilize seu imóvel como garantia e tenha acesso a
-            crédito inteligente com condições diferenciadas.
-          </p>
-
-          <a
-            href="https://wa.me/5511933739876"
-            target="_blank"
-            style={{
-              background: "#25D366",
-              color: "white",
-              padding: "16px 28px",
-              borderRadius: "8px",
-              textDecoration: "none",
-              fontWeight: "bold"
-            }}
-          >
-            Simular no WhatsApp
-          </a>
-        </div>
-      </section>
-
-      {/* BENEFÍCIOS */}
-      <section style={{
-        padding: "70px 20px",
-        background: "#f8fafc"
-      }}>
-        <div style={{
-          maxWidth: "1100px",
-          margin: "0 auto"
-        }}>
-          <h2 style={{
-            textAlign: "center",
-            fontSize: "32px",
-            marginBottom: "40px"
-          }}>
-            Vantagens do Crédito com Garantia
-          </h2>
-
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))",
-            gap: "20px"
-          }}>
-
-            <div style={{
-              background: "white",
-              padding: "25px",
-              borderRadius: "12px"
-            }}>
-              ✔ Taxas menores que crédito comum
-            </div>
-
-            <div style={{
-              background: "white",
-              padding: "25px",
-              borderRadius: "12px"
-            }}>
-              ✔ Valores mais altos disponíveis
-            </div>
-
-            <div style={{
-              background: "white",
-              padding: "25px",
-              borderRadius: "12px"
-            }}>
-              ✔ Prazos longos para pagar
-            </div>
-
-            <div style={{
-              background: "white",
-              padding: "25px",
-              borderRadius: "12px"
-            }}>
-              ✔ Atendimento consultivo especializado
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* AUTORIDADE */}
-      <section style={{
-        padding: "70px 20px"
-      }}>
-        <div style={{
-          maxWidth: "900px",
-          margin: "0 auto",
-          textAlign: "center"
-        }}>
-          <h2 style={{
-            fontSize: "30px",
-            marginBottom: "20px"
-          }}>
-            Atendimento Seguro e Especializado
-          </h2>
-
-          <p style={{
-            fontSize: "18px",
-            lineHeight: "1.8"
-          }}>
-            Conte com atendimento profissional, experiência no setor
-            financeiro e análise personalizada para encontrar a melhor solução.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA FINAL */}
-      <section style={{
-        background: "#1e3a8a",
-        color: "white",
-        padding: "70px 20px",
-        textAlign: "center"
-      }}>
-        <h2 style={{
-          fontSize: "34px",
-          marginBottom: "20px"
-        }}>
-          Solicite sua simulação agora
-        </h2>
-
-        <a
-          href="https://wa.me/5511933739876"
-          target="_blank"
-          style={{
-            background: "#25D366",
-            color: "white",
-            padding: "16px 28px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "bold"
-          }}
-        >
-          Falar no WhatsApp
-        </a>
-      </section>
-
-    </div>
-    </>
-  );
-}
-
-=======
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
@@ -196,58 +5,205 @@ function CreditoImovel() {
   return (
     <>
       <Helmet>
-        <title>Crédito com Garantia de Imóvel | Taxas Baixas</title>
-        <meta 
-          name="description" 
-          content="Crédito com garantia de imóvel com taxas reduzidas, prazos longos e liberação rápida. Compare as melhores opções." 
+        <title>Crédito com Garantia de Imóvel | Crédito Multi Bancos</title>
+
+        <meta
+          name="description"
+          content="Crédito com garantia de imóvel com taxas menores, valores altos e prazos longos. Atendimento consultivo e simulação rápida."
         />
       </Helmet>
 
-      <div style={{ 
-        textAlign: "center", 
-        padding: "40px 20px",
-        maxWidth: "700px",
-        margin: "0 auto"
-      }}>
+      <div style={{ fontFamily: "Arial, sans-serif" }}>
 
-        <h1 style={{ 
-          fontSize: '28px',
-          lineHeight: '1.3',
-          marginBottom: '20px'
+        {/* HERO */}
+        <section style={{
+          background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
+          color: "white",
+          padding: "110px 20px",
+          textAlign: "center"
         }}>
-          Crédito com Garantia de Imóvel com Taxas Baixas
-        </h1>
+          <div style={{ maxWidth: "950px", margin: "0 auto" }}>
 
-        <p style={{ lineHeight: "1.6" }}>
-          O crédito com garantia de imóvel, também conhecido como home equity,
-          permite acesso a valores maiores, prazos longos e taxas muito mais baixas.
-        </p>
+            <p style={{
+              color: "#93c5fd",
+              fontWeight: "bold",
+              letterSpacing: "1px"
+            }}>
+              TRANSFORME SEU PATRIMÔNIO EM OPORTUNIDADE
+            </p>
 
-        <br />
+            <h1 style={{
+              fontSize: "52px",
+              color:"white",
+textShadow:"0 4px 10px rgba(0,0,0,0.18)",
+              lineHeight: "1.15",
+              margin: "18px 0"
+            }}>
+              Crédito com Garantia de Imóvel com Taxas Baixas e Prazos Estendidos
+              <br />
+            </h1>
 
-        <a 
-          href="https://wa.me/5511933739876"
-          target="_blank"
-          style={{
-            background: '#25D366',
-            color: 'white',
-            padding: '15px 25px',
-            borderRadius: '8px',
-            textDecoration: 'none',
-            fontWeight: 'bold'
-          }}
-        >
-          Simular agora no WhatsApp
-        </a>
+            <p style={{
+              fontSize: "22px",
+              color: "#dbeafe",
+              marginBottom: "35px"
+            }}>
+              Utilize seu imóvel como garantia e tenha acesso a crédito inteligente com condições diferenciadas
+            </p>
 
-        <br /><br />
+            <a
+              href="https://wa.me/5511933739876"
+              target="_blank"
+              style={{
+                background: "#25D366",
+                color: "white",
+                padding: "18px 34px",
+                borderRadius: "10px",
+                textDecoration: "none",
+                fontWeight: "bold",
+                fontSize: "20px"
+              }}
+            >
+              Falar com um Especialista
+            </a>
 
-        <Link to="/">Voltar para Home</Link>
+          </div>
+        </section>
+
+        {/* BENEFÍCIOS */}
+        <section style={{
+          padding: "90px 20px",
+          background: "#f8fafc"
+        }}>
+          <div style={{
+            maxWidth: "1150px",
+            margin: "0 auto"
+          }}>
+
+            <h2 style={{
+              textAlign: "center",
+              fontSize: "40px",
+              marginBottom: "40px"
+            }}>
+              Vantagens
+            </h2>
+
+            <div style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
+              gap: "25px"
+            }}>
+
+              {[
+                "💰 Juros reduzidos e condições vantajosas",
+                "🏠 Aceitamos imóveis residenciais, comerciais ou terrenos",
+                "📈 Alto limite de crédito disponível",
+                "📅 Prazos longos que não sufocam o seu orçamento"
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  style={{
+                    background: "white",
+                    padding: "28px",
+                    borderRadius: "18px",
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+                    fontWeight: "bold",
+                    fontSize: "20px",
+                    textAlign: "center"
+                  }}
+                >
+                  {item}
+                </div>
+              ))}
+
+            </div>
+          </div>
+        </section>
+
+        {/* PROCESSO */}
+        <section style={{
+          padding: "90px 20px",
+          textAlign: "center"
+        }}>
+          <h2 style={{
+            fontSize: "40px",
+            marginBottom: "40px"
+          }}>
+            Como Funciona
+          </h2>
+
+          <div style={{
+            maxWidth: "1000px",
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
+            gap: "25px"
+          }}>
+
+            {[
+              "1️⃣ Envie seus dados",
+              "2️⃣ Análise personalizada",
+              "3️⃣ Proposta ideal",
+              "4️⃣ Liberação após aprovação"
+            ].map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  background: "#eff6ff",
+                  padding: "28px",
+                  borderRadius: "18px",
+                  fontWeight: "bold"
+                }}
+              >
+                {item}
+              </div>
+            ))}
+
+          </div>
+        </section>
+
+        {/* CTA FINAL */}
+        <section style={{
+          background: "#0f172a",
+          color: "white",
+          padding: "80px 20px",
+          textAlign: "center"
+        }}>
+          <h2 style={{
+            fontSize: "42px",
+            color:"white",
+textShadow:"0 4px 10px rgba(0,0,0,0.18)",
+            marginBottom: "20px"
+          }}>
+            Descubra Quanto Pode Liberar
+          </h2>
+
+          <a
+            href="https://wa.me/5511933739876"
+            target="_blank"
+            style={{
+              background: "#25D366",
+              color: "white",
+              padding: "18px 34px",
+              borderRadius: "10px",
+              textDecoration: "none",
+              fontWeight: "bold",
+              fontSize: "20px"
+            }}
+          >
+            Falar com um Especialista
+          </a>
+
+          <div style={{ marginTop: "35px" }}>
+            <Link to="/" style={{ color: "#93c5fd" }}>
+              ← Voltar para Home
+            </Link>
+          </div>
+        </section>
 
       </div>
     </>
   );
 }
 
->>>>>>> 3ccb740b01989aa12f04869fa2f8150bac055d9a
 export default CreditoImovel;

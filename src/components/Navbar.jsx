@@ -1,121 +1,103 @@
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <header style={{
-      position: "sticky",
-      top: "0",
-      zIndex: "999",
-      background: "rgba(255,255,255,0.96)",
-      backdropFilter: "blur(8px)",
-      boxShadow: "0 4px 18px rgba(0,0,0,0.06)"
-    }}>
-      <div style={{
-        maxWidth: "1200px",
-        margin: "0 auto",
-        padding: "16px 20px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        gap: "20px",
-        flexWrap: "wrap"
-      }}>
+    <nav
+      style={{
+        background: "rgba(15,23,42,0.96)",
+        backdropFilter: "blur(10px)",
+        position: "sticky",
+        top: "0",
+        zIndex: "999",
+        borderBottom: "1px solid rgba(255,255,255,0.08)",
+        padding: "16px 24px"
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "1280px",
+          margin: "0 auto",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          gap: "20px",
+          flexWrap: "wrap"
+        }}
+      >
 
-        {/* MARCA */}
+        {/* LOGO */}
         <Link
           to="/"
           style={{
+            color: "white",
             textDecoration: "none",
-            color: "#0f172a",
-            fontSize: "24px",
-            fontWeight: "bold"
+            fontWeight: "bold",
+            fontSize: "30px",
+            letterSpacing: "-0.5px"
           }}
         >
           Crédito Multi Bancos
         </Link>
 
         {/* MENU */}
-        <nav style={{
-  display: "flex",
-  gap: "18px",
-  flexWrap: "wrap",
-  justifyContent: "center"
-}}>
-  <Link to="/" style={linkStyle}>Home</Link>
-
-  <Link to="/credito-com-garantia-de-imovel" style={linkStyle}>
-    Crédito com Garantia
-  </Link>
-
-  <Link to="/financiamento-imobiliario" style={linkStyle}>
-    Financiamento
-  </Link>
-
-  <Link to="/emprestimo-consignado" style={linkStyle}>
-    Consignado
-  </Link>
-
-  <Link to="/consorcio" style={linkStyle}>
-    Consórcio
-  </Link>
-
-  <Link to="/seguro" style={linkStyle}>
-    Seguros
-  </Link>
-</nav>
-
-        {/* BOTÃO */}
-        <a
-          href="https://wa.me/5511933739876"
-          target="_blank"
+        <div
           style={{
-            background: "#25D366",
-            color: "white",
-            padding: "12px 18px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "bold",
-            whiteSpace: "nowrap"
+            display: "flex",
+            gap: "22px",
+            alignItems: "center",
+            flexWrap: "wrap"
           }}
         >
-          WhatsApp
-        </a>
+          {[
+            ["Crédito com Garantia", "/credito-com-garantia-de-imovel"],
+            ["Financiamento", "/financiamento-imobiliario"],
+            ["Consignado", "/emprestimo-consignado"],
+            ["Consórcio", "/consorcio"],
+            ["Seguros", "/seguro"]
+          ].map((item, index) => (
+            <Link
+              key={index}
+              to={item[1]}
+              style={{
+                color: "#e2e8f0",
+                textDecoration: "none",
+                fontWeight: "600",
+                fontSize: "15px",
+                transition: "0.3s"
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "#22c55e";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "#e2e8f0";
+              }}
+            >
+              {item[0]}
+            </Link>
+          ))}
+
+          {/* CTA */}
+          <a
+            href="https://wa.me/5511933739876"
+            target="_blank"
+            style={{
+              background: "#25D366",
+              color: "white",
+              padding: "12px 18px",
+              borderRadius: "10px",
+              textDecoration: "none",
+              fontWeight: "bold",
+              fontSize: "15px",
+              boxShadow: "0 8px 20px rgba(0,0,0,0.15)"
+            }}
+          >
+            WhatsApp
+          </a>
+        </div>
 
       </div>
-    </header>
+    </nav>
   );
 }
 
-const linkStyle = {
-  textDecoration: "none",
-  color: "#334155",
-  fontWeight: "600",
-  fontSize: "15px"
-};
-
-=======
-import { Link } from "react-router-dom";
-
-function Navbar() {
-  return (
-    <div style={{
-      display: "flex",
-      justifyContent: "center",
-      gap: "20px",
-      padding: "20px",
-      borderBottom: "1px solid #ccc",
-      marginBottom: "20px"
-    }}>
-      <Link to="/">Home</Link>
-      <Link to="/credito-com-garantia-de-imovel">Crédito Imóvel</Link>
-      <Link to="/financiamento-imobiliario">Financiamento</Link>
-      <Link to="/emprestimo-consignado">Consignado</Link>
-      <Link to="/consorcio">Consórcio</Link>
-      <Link to="/seguro">Seguros</Link>
-    </div>
-  );
-}
-
->>>>>>> 3ccb740b01989aa12f04869fa2f8150bac055d9a
 export default Navbar;

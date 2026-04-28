@@ -1,166 +1,3 @@
-<<<<<<< HEAD
-import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-
-function EmprestimoConsignado() {
-  return (
-    <>
-<Helmet>
-  <title>
-    Empréstimo Consignado | Crédito Multi Bancos
-  </title>
-
-  <meta
-    name="description"
-    content="Empréstimo consignado para aposentados, pensionistas e servidores com atendimento consultivo e análise rápida."
-  />
-  </Helmet>
-    <div style={{ fontFamily: "Arial, sans-serif", color: "#1a1a1a" }}>
-
-      {/* HERO */}
-      <section style={{
-        background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
-        color: "white",
-        padding: "80px 20px",
-        textAlign: "center"
-      }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h1 style={{
-            fontSize: "42px",
-            lineHeight: "1.2",
-            marginBottom: "20px",
-            color: "white"
-          }}>
-            Empréstimo Consignado com Taxas Competitivas
-          </h1>
-
-          <p style={{
-            fontSize: "20px",
-            color: "#dbeafe",
-            marginBottom: "30px"
-          }}>
-            Soluções para aposentados, pensionistas e servidores, com análise rápida e atendimento especializado.
-          </p>
-
-          <a
-            href="https://wa.me/5511933739876"
-            target="_blank"
-            style={{
-              background: "#25D366",
-              color: "white",
-              padding: "16px 28px",
-              borderRadius: "8px",
-              textDecoration: "none",
-              fontWeight: "bold"
-            }}
-          >
-            Simular no WhatsApp
-          </a>
-        </div>
-      </section>
-
-      {/* BENEFÍCIOS */}
-      <section style={{
-        padding: "70px 20px",
-        background: "#f8fafc"
-      }}>
-        <div style={{
-          maxWidth: "1100px",
-          margin: "0 auto"
-        }}>
-          <h2 style={{
-            textAlign: "center",
-            fontSize: "32px",
-            marginBottom: "40px"
-          }}>
-            Vantagens do Consignado
-          </h2>
-
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))",
-            gap: "20px"
-          }}>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Taxas geralmente menores que crédito pessoal
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Parcelas descontadas em folha
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Processo simples e ágil
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Atendimento consultivo para encontrar a melhor opção
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* CONFIANÇA */}
-      <section style={{ padding: "70px 20px" }}>
-        <div style={{
-          maxWidth: "900px",
-          margin: "0 auto",
-          textAlign: "center"
-        }}>
-          <h2 style={{
-            fontSize: "30px",
-            marginBottom: "20px"
-          }}>
-            Atendimento Seguro e Transparente
-          </h2>
-
-          <p style={{
-            fontSize: "18px",
-            lineHeight: "1.8"
-          }}>
-            Conte com atendimento profissional e análise personalizada para buscar a melhor solução consignada para seu perfil.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA FINAL */}
-      <section style={{
-        background: "#1e3a8a",
-        color: "white",
-        padding: "70px 20px",
-        textAlign: "center"
-      }}>
-        <h2 style={{
-          fontSize: "34px",
-          marginBottom: "20px"
-        }}>
-          Solicite sua simulação agora
-        </h2>
-
-        <a
-          href="https://wa.me/5511933739876"
-          target="_blank"
-          style={{
-            background: "#25D366",
-            color: "white",
-            padding: "16px 28px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "bold"
-          }}
-        >
-          Falar no WhatsApp
-        </a>
-      </section>
-
-    </div>
-    </>
-  );
-}
-
-=======
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
@@ -168,62 +5,207 @@ function EmprestimoConsignado() {
   return (
     <>
       <Helmet>
-        <title>Empréstimo Consignado | Taxas Baixas</title>
-        <meta 
-          name="description" 
-          content="Empréstimo consignado com taxas reduzidas para aposentados e servidores. Compare opções e aproveite as melhores condições." 
+        <title>Empréstimo Consignado | Crédito Multi Bancos</title>
+
+        <meta
+          name="description"
+          content="Empréstimo consignado com taxas reduzidas para aposentados, pensionistas e servidores. Atendimento rápido e seguro."
         />
       </Helmet>
 
-      <div style={{ 
-        textAlign: "center", 
-        padding: "40px 20px",
-        maxWidth: "700px",
-        margin: "0 auto"
-      }}>
+      <div style={{ fontFamily: "Arial, sans-serif" }}>
 
-        <h1 style={{ 
-          fontSize: '28px',
-          lineHeight: '1.3',
-          marginBottom: '20px'
+        {/* HERO */}
+        <section style={{
+          background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
+          color: "white",
+          padding: "110px 20px" ,
+          textAlign: "center"
         }}>
-          Empréstimo Consignado com Taxas Baixas
-        </h1>
+          <div style={{ maxWidth: "980px", margin: "0 auto" }}>
 
-        <p style={{ 
-          lineHeight: "1.6",
-          fontSize: "16px"
+            <p style={{
+              color: "#93c5fd",
+              fontWeight: "bold",
+              letterSpacing: "1px"
+            }}>
+              LIBERAÇÃO RÁPIDA E CONDIÇÕES EXCLUSIVAS
+            </p>
+
+            <h1 style={{
+              fontSize: "54px",
+              lineHeight: "1.15",
+              margin: "20px 0",
+              color: "white",
+              textShadow: "0 4px 10px rgba(0,0,0,0.18)"
+            }}>
+              Empréstimo Consignado
+              <br />
+              Segurança e taxas reduzidas
+            </h1>
+
+            <p style={{
+              fontSize: "24px",
+              color: "#dbeafe",
+              marginBottom: "35px"
+            }}>
+              Atendimento exclusivo para aposentados, pensionistas e servidores públicos.
+            </p>
+
+            <a
+              href="https://wa.me/5511933739876"
+              target="_blank"
+              style={{
+                background: "#25D366",
+                color: "white",
+                padding: "18px 34px",
+                borderRadius: "10px",
+                textDecoration: "none",
+                fontWeight: "bold",
+                fontSize: "20px"
+              }}
+            >
+              Quero Simular Agora
+            </a>
+
+          </div>
+        </section>
+
+        {/* BENEFÍCIOS */}
+        <section style={{
+          padding: "80px 20px",
+          background: "#f8fafc"
         }}>
-          O empréstimo consignado oferece taxas mais baixas e aprovação facilitada,
-          ideal para aposentados, pensionistas e servidores públicos.
-        </p>
+          <div style={{
+            maxWidth: "1150px",
+            margin: "0 auto"
+          }}>
 
-        <br />
+            <h2 style={{
+              textAlign: "center",
+              fontSize: "40px",
+              marginBottom: "40px"
+            }}>
+              Vantagens
+            </h2>
 
-        <a 
-          href="https://wa.me/5511933739876"
-          target="_blank"
-          style={{
-            background: '#25D366',
-            color: 'white',
-            padding: '15px 25px',
-            borderRadius: '8px',
-            textDecoration: 'none',
-            fontWeight: 'bold',
-            display: 'inline-block'
-          }}
-        >
-          Falar no WhatsApp
-        </a>
+            <div style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
+              gap: "25px"
+            }}>
 
-        <br /><br />
+              {[
+                "📉 Condições exclusivas com juros baixos",
+                "⚡ Aprovação simplificada e sem burocracia",
+                "🔒 Contratação segura com transparência em todas as etapas",
+                "💳 Pagamento automático sem preocupação com vencimentos"
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  style={{
+                    background: "white",
+                    padding: "30px",
+                    borderRadius: "18px",
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+                    fontWeight: "bold",
+                    fontSize: "20px",
+                    textAlign: "center"
+                  }}
+                >
+                  {item}
+                </div>
+              ))}
 
-        <Link to="/">Voltar para Home</Link>
+            </div>
+          </div>
+        </section>
+
+        {/* PROCESSO */}
+        <section style={{
+          padding: "80px 20px",
+          textAlign: "center"
+        }}>
+          <h2 style={{
+            fontSize: "40px",
+            marginBottom: "40px"
+          }}>
+            Como Funciona
+          </h2>
+
+          <div style={{
+            maxWidth: "1000px",
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
+            gap: "25px"
+          }}>
+
+            {[
+              "1️⃣ Envie seus dados",
+              "2️⃣ Simulação imediata",
+              "3️⃣ Aprovação",
+              "4️⃣ Liberação rápida"
+            ].map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  background: "#eff6ff",
+                  padding: "28px",
+                  borderRadius: "18px",
+                  fontWeight: "bold"
+                }}
+              >
+                {item}
+              </div>
+            ))}
+
+          </div>
+        </section>
+
+        {/* CTA FINAL */}
+        <section style={{
+          background: "#0f172a",
+          color: "white",
+          padding: "80px 20px",
+          textAlign: "center"
+        }}>
+          <h2 style={{
+            fontSize: "42px",
+            color:"white", 
+
+textShadow:"0 4px 10px rgba(0,0,0,0.18)", 
+            marginBottom: "20px"
+          }}>
+            Simule Sua Proposta Agora Mesmo
+          </h2>
+
+          <a
+            href="https://wa.me/5511933739876"
+            target="_blank"
+            style={{
+              background: "#25D366",
+              color: "white",
+              padding: "18px 34px",
+              borderRadius: "10px",
+              textDecoration: "none",
+              fontWeight: "bold",
+              fontSize: "20px"
+            }}
+          >
+            Quero Simular Agora
+          </a>
+
+          <div style={{ marginTop: "35px" }}>
+            <Link to="/" style={{ color: "#93c5fd" }}>
+              ← Voltar para Home
+            </Link>
+          </div>
+        </section>
 
       </div>
     </>
   );
 }
 
->>>>>>> 3ccb740b01989aa12f04869fa2f8150bac055d9a
 export default EmprestimoConsignado;

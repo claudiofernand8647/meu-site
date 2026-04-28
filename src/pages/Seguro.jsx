@@ -1,166 +1,3 @@
-<<<<<<< HEAD
-import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-
-function Seguro() {
-  return (
-    <>
-<Helmet>
-  <title>
-    Seguros | Crédito Multi Bancos
-  </title>
-
-  <meta
-    name="description"
-    content="Seguro de vida, residencial, auto e empresarial com atendimento consultivo e soluções personalizadas."
-  />
-  </Helmet>
-    <div style={{ fontFamily: "Arial, sans-serif", color: "#1a1a1a" }}>
-
-      {/* HERO */}
-      <section style={{
-        background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
-        color: "white",
-        padding: "80px 20px",
-        textAlign: "center"
-      }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h1 style={{
-            fontSize: "42px",
-            lineHeight: "1.2",
-            marginBottom: "20px",
-            color: "white"
-          }}>
-            Seguros para Proteger seu Patrimônio e sua Família
-          </h1>
-
-          <p style={{
-            fontSize: "20px",
-            color: "#dbeafe",
-            marginBottom: "30px"
-          }}>
-            Soluções personalizadas para proteger o que realmente importa.
-          </p>
-
-          <a
-            href="https://wa.me/5511933739876"
-            target="_blank"
-            style={{
-              background: "#25D366",
-              color: "white",
-              padding: "16px 28px",
-              borderRadius: "8px",
-              textDecoration: "none",
-              fontWeight: "bold"
-            }}
-          >
-            Solicitar Cotação
-          </a>
-        </div>
-      </section>
-
-      {/* BENEFÍCIOS */}
-      <section style={{
-        padding: "70px 20px",
-        background: "#f8fafc"
-      }}>
-        <div style={{
-          maxWidth: "1100px",
-          margin: "0 auto"
-        }}>
-          <h2 style={{
-            textAlign: "center",
-            fontSize: "32px",
-            marginBottom: "40px"
-          }}>
-            Tipos de Seguro
-          </h2>
-
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))",
-            gap: "20px"
-          }}>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Seguro de Vida
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Seguro Residencial
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Seguro Auto
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Seguro Empresarial
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* CONFIANÇA */}
-      <section style={{ padding: "70px 20px" }}>
-        <div style={{
-          maxWidth: "900px",
-          margin: "0 auto",
-          textAlign: "center"
-        }}>
-          <h2 style={{
-            fontSize: "30px",
-            marginBottom: "20px"
-          }}>
-            Proteção com Atendimento Especializado
-          </h2>
-
-          <p style={{
-            fontSize: "18px",
-            lineHeight: "1.8"
-          }}>
-            Avaliação personalizada para indicar coberturas adequadas ao seu perfil e momento de vida.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA FINAL */}
-      <section style={{
-        background: "#1e3a8a",
-        color: "white",
-        padding: "70px 20px",
-        textAlign: "center"
-      }}>
-        <h2 style={{
-          fontSize: "34px",
-          marginBottom: "20px"
-        }}>
-          Solicite sua cotação agora
-        </h2>
-
-        <a
-          href="https://wa.me/5511933739876"
-          target="_blank"
-          style={{
-            background: "#25D366",
-            color: "white",
-            padding: "16px 28px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "bold"
-          }}
-        >
-          Falar no WhatsApp
-        </a>
-      </section>
-
-    </div>
-    </>
-  );
-}
-
-=======
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
@@ -168,59 +5,207 @@ function Seguro() {
   return (
     <>
       <Helmet>
-        <title>Seguros | Proteção Completa</title>
-        <meta 
-          name="description" 
-          content="Seguro auto, residencial e de vida com as melhores condições. Proteja seu patrimônio com segurança." 
+        <title>Seguros | Crédito Multi Bancos</title>
+
+        <meta
+          name="description"
+          content="Seguro de vida, auto, residencial e empresarial com atendimento consultivo e proteção sob medida."
         />
       </Helmet>
 
-      <div style={{ 
-        textAlign: "center", 
-        padding: "40px 20px",
-        maxWidth: "700px",
-        margin: "0 auto"
-      }}>
+      <div style={{ fontFamily: "Arial, sans-serif" }}>
 
-        <h1 style={{ 
-          fontSize: '28px',
-          lineHeight: '1.3',
-          marginBottom: '20px'
+        {/* HERO */}
+        <section style={{
+          background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
+          color: "white",
+          padding: "110px 20px" ,
+          textAlign: "center"
         }}>
-          Seguros com Proteção Completa para Você
-        </h1>
+          <div style={{ maxWidth: "980px", margin: "0 auto" }}>
 
-        <p style={{ lineHeight: "1.6" }}>
-          Compare opções de seguro auto, residencial e de vida.
-          Encontre a melhor proteção com condições acessíveis.
-        </p>
+            <p style={{
+              color: "#93c5fd",
+              fontWeight: "bold",
+              letterSpacing: "1px"
+            }}>
+              PROTEÇÃO PARA O QUE MAIS TE IMPORTA: SUA FAMÍLIA E PATRIMÔNIO
+            </p>
 
-        <br />
+            <h1 style={{
+              fontSize: "54px",
+              lineHeight: "1.15",
+              margin: "20px 0",
+              color: "white",
+              textShadow: "0 4px 10px rgba(0,0,0,0.18)"
+            }}>
+              Seguros Sob Medida
+              <br />
+              Para Você e Seu Patrimônio
+            </h1>
 
-        <a 
-          href="https://wa.me/5511933739876"
-          target="_blank"
-          style={{
-            background: '#25D366',
-            color: 'white',
-            padding: '15px 25px',
-            borderRadius: '8px',
-            textDecoration: 'none',
-            fontWeight: 'bold',
-            display: 'inline-block'
-          }}
-        >
-          Cotar Seguro
-        </a>
+            <p style={{
+              fontSize: "24px",
+              color: "#dbeafe",
+              marginBottom: "35px"
+            }}>
+              Vida, auto, residencial e empresarial com soluções flexíveis, atendimento personalizado e cobertura abrangente.
+            </p>
 
-        <br /><br />
+            <a
+              href="https://wa.me/5511933739876"
+              target="_blank"
+              style={{
+                background: "#25D366",
+                color: "white",
+                padding: "18px 34px",
+                borderRadius: "10px",
+                textDecoration: "none",
+                fontWeight: "bold",
+                fontSize: "20px"
+              }}
+            >
+              Garanta Seu Futuro
+            </a>
 
-        <Link to="/">Voltar para Home</Link>
+          </div>
+        </section>
+
+        {/* BENEFÍCIOS */}
+        <section style={{
+          padding: "80px 20px",
+          background: "#f8fafc"
+        }}>
+          <div style={{
+            maxWidth: "1150px",
+            margin: "0 auto"
+          }}>
+
+            <h2 style={{
+              textAlign: "center",
+              fontSize: "40px",
+              marginBottom: "40px"
+            }}>
+              Vantagens
+            </h2>
+
+            <div style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
+              gap: "25px"
+            }}>
+
+              {[
+                "🛡️ Proteção personalizada e planos que atendem a sua necessidade",
+                "🚗 Seguro auto com cobertura completa contra colisão, roubo e terceiros. Além de assistência 24 horas",
+                "🏠 Com o Seguro Residencial, proteja seu patrimônio contra danos elétricos, incêndio e furtos",
+                "💼 Com o Seguro empresarial, garanta a continuidade do seu negócio com cobertura personalizada para o seu setor"
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  style={{
+                    background: "white",
+                    padding: "30px",
+                    borderRadius: "18px",
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+                    fontWeight: "bold",
+                    fontSize: "20px",
+                    textAlign: "center"
+                  }}
+                >
+                  {item}
+                </div>
+              ))}
+
+            </div>
+          </div>
+        </section>
+
+        {/* PROCESSO */}
+        <section style={{
+          padding: "80px 20px",
+          textAlign: "center"
+        }}>
+          <h2 style={{
+            fontSize: "40px",
+            marginBottom: "40px"
+          }}>
+            Como Funciona
+          </h2>
+
+          <div style={{
+            maxWidth: "1000px",
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
+            gap: "25px"
+          }}>
+
+            {[
+              "1️⃣ Conte sua necessidade",
+              "2️⃣ Análise ideal",
+              "3️⃣ Cotação personalizada",
+              "4️⃣ Contratação segura"
+            ].map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  background: "#eff6ff",
+                  padding: "28px",
+                  borderRadius: "18px",
+                  fontWeight: "bold"
+                }}
+              >
+                {item}
+              </div>
+            ))}
+
+          </div>
+        </section>
+
+        {/* CTA FINAL */}
+        <section style={{
+          background: "#0f172a",
+          color: "white",
+          padding: "80px 20px",
+          textAlign: "center"
+        }}>
+          <h2 style={{
+            fontSize: "42px",
+            color:"white", 
+
+textShadow:"0 4px 10px rgba(0,0,0,0.18)", 
+            marginBottom: "20px"
+          }}>
+            Proteja Seu Futuro Hoje
+          </h2>
+
+          <a
+            href="https://wa.me/5511933739876"
+            target="_blank"
+            style={{
+              background: "#25D366",
+              color: "white",
+              padding: "18px 34px",
+              borderRadius: "10px",
+              textDecoration: "none",
+              fontWeight: "bold",
+              fontSize: "20px"
+            }}
+          >
+            Garanta Seu Futuro
+          </a>
+
+          <div style={{ marginTop: "35px" }}>
+            <Link to="/" style={{ color: "#93c5fd" }}>
+              ← Voltar para Home
+            </Link>
+          </div>
+        </section>
 
       </div>
     </>
   );
 }
 
->>>>>>> 3ccb740b01989aa12f04869fa2f8150bac055d9a
 export default Seguro;

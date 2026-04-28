@@ -13,10 +13,7 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-helmet": "^6.1.0",
-<<<<<<< HEAD
     "react-helmet-async": "^3.0.0",
-=======
->>>>>>> 3ccb740b01989aa12f04869fa2f8150bac055d9a
     "react-router-dom": "^7.14.1"
   },
   "devDependencies": {

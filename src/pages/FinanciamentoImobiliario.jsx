@@ -1,44 +1,184 @@
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+
 function FinanciamentoImobiliario() {
   return (
     <>
-<Helmet>
-  <title>
-    Financiamento Imobiliário | Crédito Multi Bancos
-  </title>
-  <meta
-    name="description"
-    content="Financiamento imobiliário com análise personalizada e atendimento especializado. Simule seu crédito imobiliário em São Paulo ou online."
-  />
-  </Helmet>
-    <div style={{ fontFamily: "Arial, sans-serif", color: "#1a1a1a" }}>
+      <Helmet>
+        <title>Financiamento Imobiliário | Crédito Multi Bancos</title>
 
-      {/* HERO */}
-      <section style={{
-        background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
-        color: "white",
-        padding: "80px 20px",
-        textAlign: "center"
-      }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h1 style={{
+        <meta
+          name="description"
+          content="Financiamento imobiliário com análise personalizada, melhores condições e atendimento especializado."
+        />
+      </Helmet>
+
+      <div style={{ fontFamily: "Arial, sans-serif" }}>
+
+        {/* HERO */}
+        <section style={{
+          background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
+          color: "white",
+          padding: "110px 20px",
+          textAlign: "center"
+        }}>
+          <div style={{ maxWidth: "980px", margin: "0 auto" }}>
+
+            <p style={{
+              color: "#93c5fd",
+              fontWeight: "bold",
+              letterSpacing: "1px"
+            }}>
+              REALIZE O SONHO DO IMÓVEL PRÓPRIO
+            </p>
+
+            <h1 style={{
+              fontSize: "54px",
+              lineHeight: "1.15",
+              margin: "20px 0",
+              color: "white",
+              textShadow: "0 4px 10px rgba(0,0,0,0.18)"
+            }}>
+              Financiamento Imobiliário
+              <br />
+              com Condições Competitivas
+            </h1>
+
+            <p style={{
+              fontSize: "24px",
+              color: "#dbeafe",
+              marginBottom: "35px"
+            }}>
+              Aprovação facilitada, parcelas planejadas e suporte especializado.
+            </p>
+
+            <a
+              href="https://wa.me/5511933739876"
+              target="_blank"
+              style={{
+                background: "#25D366",
+                color: "white",
+                padding: "18px 34px",
+                borderRadius: "10px",
+                textDecoration: "none",
+                fontWeight: "bold",
+                fontSize: "20px"
+              }}
+            >
+              Simular Meu Financiamento
+            </a>
+
+          </div>
+        </section>
+
+        {/* BENEFÍCIOS */}
+        <section style={{
+          padding: "90px 20px",
+          background: "#f8fafc"
+        }}>
+          <div style={{
+            maxWidth: "1150px",
+            margin: "0 auto"
+          }}>
+
+            <h2 style={{
+              textAlign: "center",
+              fontSize: "40px",
+              marginBottom: "40px"
+            }}>
+              Vantagens
+            </h2>
+
+            <div style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
+              gap: "25px"
+            }}>
+
+              {[
+                "🏠 Liberdade para a compra do seu imóvel novo ou usado",
+                "📉 Taxas competivas e condições que cabem no seu bolso",
+                "📅 Parcelas planejadas, flexibilidade para o seu orçamento",
+                "🤝 Acompanhamento próximo em todo processo"
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  style={{
+                    background: "white",
+                    padding: "30px",
+                    borderRadius: "18px",
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
+                    fontWeight: "bold",
+                    fontSize: "20px",
+                    textAlign: "center"
+                  }}
+                >
+                  {item}
+                </div>
+              ))}
+
+            </div>
+          </div>
+        </section>
+
+        {/* PROCESSO */}
+        <section style={{
+          padding: "80px 20px",
+          textAlign: "center"
+        }}>
+          <h2 style={{
+            fontSize: "40px",
+            marginBottom: "40px"
+          }}>
+            Como Funciona
+          </h2>
+
+          <div style={{
+            maxWidth: "1000px",
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
+            gap: "25px"
+          }}>
+
+            {[
+              "1️⃣ Envie seu perfil",
+              "2️⃣ Simulação personalizada",
+              "3️⃣ Aprovação e proposta",
+              "4️⃣ Assinatura e liberação"
+            ].map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  background: "#eff6ff",
+                  padding: "28px",
+                  borderRadius: "18px",
+                  fontWeight: "bold"
+                }}
+              >
+                {item}
+              </div>
+            ))}
+
+          </div>
+        </section>
+
+        {/* CTA FINAL */}
+        <section style={{
+          background: "#0f172a",
+          color: "white",
+          padding: "80px 20px",
+          textAlign: "center"
+        }}>
+          <h2 style={{
             fontSize: "42px",
-            lineHeight: "1.2",
-            marginBottom: "20px",
-            color: "white"
-          }}>
-            Financiamento Imobiliário com Condições Competitivas
-          </h1>
+            color:"white", 
 
-          <p style={{
-            fontSize: "20px",
-            color: "#dbeafe",
-            marginBottom: "30px"
+textShadow:"0 4px 10px rgba(0,0,0,0.18)",
+            marginBottom: "20px"
           }}>
-            Conquiste seu imóvel com atendimento especializado e análise personalizada.
-          </p>
+            Simule Seu Financiamento Agora
+          </h2>
 
           <a
             href="https://wa.me/5511933739876"
@@ -46,174 +186,26 @@ function FinanciamentoImobiliario() {
             style={{
               background: "#25D366",
               color: "white",
-              padding: "16px 28px",
-              borderRadius: "8px",
+              padding: "18px 34px",
+              borderRadius: "10px",
               textDecoration: "none",
-              fontWeight: "bold"
+              fontWeight: "bold",
+              fontSize: "20px"
             }}
           >
-            Simular no WhatsApp
+            Simular Meu Financiamento
           </a>
-        </div>
-      </section>
 
-      {/* BENEFÍCIOS */}
-      <section style={{
-        padding: "70px 20px",
-        background: "#f8fafc"
-      }}>
-        <div style={{
-          maxWidth: "1100px",
-          margin: "0 auto"
-        }}>
-          <h2 style={{
-            textAlign: "center",
-            fontSize: "32px",
-            marginBottom: "40px"
-          }}>
-            Vantagens do Financiamento
-          </h2>
-
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))",
-            gap: "20px"
-          }}>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Parcelas planejadas conforme análise
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Possibilidade de usar FGTS
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Atendimento consultivo do início ao fim
-            </div>
-
-            <div style={{ background: "white", padding: "25px", borderRadius: "12px" }}>
-              ✔ Simulação rápida e personalizada
-            </div>
-
+          <div style={{ marginTop: "35px" }}>
+            <Link to="/" style={{ color: "#93c5fd" }}>
+              ← Voltar para Home
+            </Link>
           </div>
-        </div>
-      </section>
-
-      {/* CONFIANÇA */}
-      <section style={{ padding: "70px 20px" }}>
-        <div style={{
-          maxWidth: "900px",
-          margin: "0 auto",
-          textAlign: "center"
-        }}>
-          <h2 style={{
-            fontSize: "30px",
-            marginBottom: "20px"
-          }}>
-            Atendimento Especializado
-          </h2>
-
-          <p style={{
-            fontSize: "18px",
-            lineHeight: "1.8"
-          }}>
-            Conte com experiência no mercado financeiro para buscar a melhor solução
-            de financiamento para seu perfil.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA FINAL */}
-      <section style={{
-        background: "#1e3a8a",
-        color: "white",
-        padding: "70px 20px",
-        textAlign: "center"
-      }}>
-        <h2 style={{
-          fontSize: "34px",
-          marginBottom: "20px"
-        }}>
-          Solicite sua simulação agora
-        </h2>
-
-        <a
-          href="https://wa.me/5511933739876"
-          target="_blank"
-          style={{
-            background: "#25D366",
-            color: "white",
-            padding: "16px 28px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "bold"
-          }}
-        >
-          Falar no WhatsApp
-        </a>
-      </section>
-
-    </div>
-    </>
-  );
-}
-
-=======
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
-function FinanciamentoImobiliario() {
-  return (
-    <>
-      <Helmet>
-        <title>Financiamento Imobiliário | Taxas Baixas | Creditomultibancos</title>
-        <meta 
-          name="description" 
-          content="Financiamento imobiliário com taxas competitivas, prazos longos e aprovação facilitada. Compare as melhores opções com a Creditomultibancos." 
-        />
-      </Helmet>
-
-      <div style={{ 
-        fontFamily: 'Arial', 
-        padding: '40px', 
-        textAlign: 'center' 
-      }}>
-        
-        <h1 style={{ fontSize: '32px', marginBottom: '20px' }}>
-  Financiamento Imobiliário com as Melhores Taxas
-</h1>
-
-        <p style={{ maxWidth: '600px', margin: '20px auto' }}>
-          O financiamento imobiliário permite adquirir seu imóvel com condições acessíveis,
-          prazos longos e taxas competitivas. Na Creditomultibancos você compara diversas opções
-          e encontra a melhor solução para o seu perfil.
-        </p>
-
-        <a 
-          href="https://wa.me/5511933739876"
-          target="_blank"
-          style={{
-            background: '#25D366',
-            color: 'white',
-            padding: '15px 25px',
-            borderRadius: '8px',
-            textDecoration: 'none',
-            fontWeight: 'bold'
-          }}
-        >
-          Falar no WhatsApp
-        </a>
-
-        <br /><br />
-
-        <Link to="/">
-  Voltar para Home
-</Link>
+        </section>
 
       </div>
     </>
   );
 }
 
->>>>>>> 3ccb740b01989aa12f04869fa2f8150bac055d9a
 export default FinanciamentoImobiliario;

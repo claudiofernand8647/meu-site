@@ -1,262 +1,231 @@
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
 import CreditoImovel from "./pages/CreditoImovel.jsx";
 import FinanciamentoImobiliario from "./pages/FinanciamentoImobiliario.jsx";
 import EmprestimoConsignado from "./pages/EmprestimoConsignado.jsx";
 import Consorcio from "./pages/Consorcio.jsx";
 import Seguro from "./pages/Seguro.jsx";
-<<<<<<< HEAD
-import Footer from "./components/Footer.jsx";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+
 function Home() {
   return (
     <>
-      <Helmet>
-        <title>
-          <title>
-  Crédito Multi Bancos | Soluções Financeiras
-</title>
-        </title>
+  <Helmet>
+    <title>Crédito Multi Bancos | Soluções Financeiras</title>
 
-        <meta
-          name="description"
-          content="Crédito Multi Bancos oferece crédito com garantia, financiamento, empréstimo consignado, consórcio e seguros com atendimento consultivo em São Paulo e todo Brasil."
-        />
+    <meta
+      name="description"
+      content="Crédito com garantia, financiamento, consignado, consórcio e seguros com atendimento consultivo."
+    />
+  </Helmet>
 
-        <meta
-          name="keywords"
-          content="crédito com garantia, financiamento imobiliário, empréstimo consignado, consórcio, seguros, São Paulo"
-        />
-      </Helmet>
-    <div style={{ fontFamily: "Arial, sans-serif", color: "#1a1a1a" }}>
+  <div style={{ fontFamily: "Arial, sans-serif" }}>
 
-      {/* HERO */}
-  <section style={{
-  background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
-  color: "white",
-  padding: "95px 20px",
-  textAlign: "center"
+    {/* HERO */}
+    <section style={{
+      background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
+      color: "white",
+      padding: "90px 20px",
+      textAlign: "center"
+    }}>
+      <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+
+        <p style={{
+          color: "#93c5fd",
+          fontWeight: "bold",
+          letterSpacing: "1px"
+        }}>
+          ESPECIALISTA EM SOLUÇÕES FINANCEIRAS
+        </p>
+
+        <h1 style={{
+          fontSize: "52px",
+          color:"white", 
+
+textShadow:"0 4px 10px rgba(0,0,0,0.18)", 
+          lineHeight: "1.15",
+          margin: "20px 0"
+        }}>
+          Crédito Inteligente com Segurança, Taxas Competitivas e Atendimento Consultivo
+          <br />
+        </h1>
+
+        <p style={{
+          fontSize: "22px",
+          maxWidth: "750px",
+          margin: "0 auto 35px",
+          color: "#dbeafe"
+        }}>
+          Crédito com garantia de imóvel, financiamento, consignado, consórcio e seguros com atendimento especializado.
+        </p>
+
+        <a
+          href="https://wa.me/5511933739876"
+          target="_blank"
+          style={{
+            background: "#25D366",
+            color: "white",
+            padding: "18px 34px",
+            borderRadius: "10px",
+            textDecoration: "none",
+            fontWeight: "bold",
+            fontSize: "20px",
+            display: "inline-block"
+          }}
+        >
+          Simular no WhatsApp
+        </a>
+
+      </div>
+    </section>
+
+    {/* PROVAS */}
+    <section style={{
+      background: "#0b1120",
+      color: "white",
+      padding: "35px 20px"
+    }}>
+      <div style={{
+        maxWidth: "1100px",
+        margin: "0 auto",
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
+        textAlign: "center",
+        gap: "20px"
+      }}>
+        <div><h3>+500</h3><p>Clientes atendidos</p></div>
+        <div><h3>+10 anos</h3><p>Experiência</p></div>
+        <div><h3>CEA / CFP</h3><p>Certificações</p></div>
+        <div><h3>100%</h3><p>Atendimento consultivo</p></div>
+      </div>
+    </section>
+
+    {/* SERVIÇOS */}
+<section style={{
+  padding: "80px 20px",
+  background: "#f8fafc"
 }}>
   <div style={{
-    maxWidth: "950px",
+    maxWidth: "1200px",
     margin: "0 auto"
   }}>
 
-    <p style={{
-      color: "#93c5fd",
-      fontWeight: "bold",
-      marginBottom: "15px",
-      letterSpacing: "1px"
-    }}>
-      ESPECIALISTA EM SOLUÇÕES FINANCEIRAS
-    </p>
-
-    <h1 style={{
-      fontSize: "48px",
-      lineHeight: "1.2",
-      marginBottom: "22px"
-    }}>
-      Crédito Inteligente com Segurança,
-      Taxas Competitivas e Atendimento Consultivo
-    </h1>
-
-    <p style={{
-      fontSize: "20px",
-      maxWidth: "760px",
-      margin: "0 auto 35px",
-      color: "#dbeafe"
-    }}>
-      Crédito com garantia de imóvel, financiamento,
-      consignado, consórcio e seguros com atendimento especializado.
-    </p>
-
-    <div style={{
-      display: "flex",
-      justifyContent: "center",
-      gap: "15px",
-      flexWrap: "wrap"
-    }}>
-
-      <a
-        href="https://wa.me/5511933739876"
-        target="_blank"
-        style={{
-          background: "#25D366",
-          color: "white",
-          padding: "16px 28px",
-          borderRadius: "8px",
-          textDecoration: "none",
-          fontWeight: "bold"
-        }}
-      >
-        Simular no WhatsApp
-      </a>
-
-      <a
-        href="#servicos"
-        style={{
-          border: "1px solid white",
-          color: "white",
-          padding: "16px 28px",
-          borderRadius: "8px",
-          textDecoration: "none",
-          fontWeight: "bold"
-        }}
-      >
-        Ver Serviços
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-      {/* NÚMEROS */}
-<section style={{
-  background: "#0b1120",
-  color: "white",
-  padding: "30px 20px"
-}}>
-  <div style={{
-    maxWidth: "1100px",
-    margin: "0 auto",
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
-    gap: "20px",
-    textAlign: "center"
-  }}>
-    <div>
-      <h3 style={{ fontSize: "30px", marginBottom: "8px" }}>+10</h3>
-      <p>Anos de experiência</p>
-    </div>
-
-    <div>
-      <h3 style={{ fontSize: "30px", marginBottom: "8px" }}>+500</h3>
-      <p>Clientes atendidos</p>
-    </div>
-
-    <div>
-      <h3 style={{ fontSize: "30px", marginBottom: "8px" }}>100%</h3>
-      <p>Atendimento consultivo</p>
-    </div>
-
-    <div>
-      <h3 style={{ fontSize: "30px", marginBottom: "8px" }}>CEA / CFP</h3>
-      <p>Certificações financeiras</p>
-    </div>
-  </div>
-</section>
-
-      {/* SERVIÇOS */}
-<section
-  id="servicos"
-  style={{ padding: "70px 20px", background: "#f8fafc" }}
->
-        <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <h2 style={{
-            textAlign: "center",
-            fontSize: "32px",
-            marginBottom: "40px"
-          }}>
-            Nossos Serviços
-          </h2>
-
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
-            gap: "20px"
-          }}>
-
-            {[
-  {
-    titulo: "Crédito com Garantia",
-    link: "/credito-com-garantia-de-imovel"
-  },
-  {
-    titulo: "Financiamento Imobiliário",
-    link: "/financiamento-imobiliario"
-  },
-  {
-    titulo: "Empréstimo Consignado",
-    link: "/emprestimo-consignado"
-  },
-  {
-    titulo: "Consórcios",
-    link: "/consorcio"
-  },
-  {
-    titulo: "Seguros",
-    link: "/seguro"
-  }
-].map((item, i) => (
-  <div key={i} style={{
-    background: "white",
-    padding: "30px",
-    borderRadius: "14px",
-    boxShadow: "0 12px 25px rgba(0,0,0,0.08)",
-    textAlign: "center",
-    transition: "0.3s"
-  }}>
-    <h3 style={{
-      fontSize: "22px",
+    <h2 style={{
+      textAlign: "center",
+      fontSize: "40px",
       marginBottom: "15px",
       color: "#0f172a"
     }}>
-      {item.titulo}
-    </h3>
+      Nossos Serviços
+    </h2>
 
+    <p style={{
+      textAlign: "center",
+      fontSize: "18px",
+      color: "#475569",
+      marginBottom: "45px"
+    }}>
+      Soluções financeiras personalizadas para cada momento.
+    </p>
+
+    <div style={{
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))",
+  gap: "24px",
+  justifyItems: "center"
+}}>
+
+  {[
+  ["🏠", "Crédito com Garantia de Imóvel", "Use seu imóvel para taxas menores.", "/credito-com-garantia-de-imovel"],
+
+  ["🏢", "Financiamento", "Conquiste seu imóvel com parcelas planejadas.", "/financiamento-imobiliario"],
+
+  ["💳", " Empréstimo Consignado", "Taxas reduzidas para aposentados e servidores.", "/emprestimo-consignado"],
+
+  ["🚗", "Consórcios", "Planejamento sem juros para seus objetivos.", "/consorcio"],
+
+  ["🛡️", "Seguros", "Proteção para família, patrimônio e empresa.", "/seguro"]
+]
+.map((item, index) => (
     <Link
-      to={item.link}
-      style={{
-        background: "#1e3a8a",
-        color: "white",
-        padding: "10px 18px",
-        borderRadius: "8px",
-        textDecoration: "none",
-        display: "inline-block",
-        fontWeight: "bold"
-      }}
+  key={index}
+  to={item[3]}
+
+  onMouseEnter={(e) => {
+    e.currentTarget.style.transform = "translateY(-8px)";
+    e.currentTarget.style.boxShadow = "0 18px 35px rgba(0,0,0,0.12)";
+  }}
+
+  onMouseLeave={(e) => {
+    e.currentTarget.style.transform = "translateY(0px)";
+    e.currentTarget.style.boxShadow = "0 12px 28px rgba(0,0,0,0.08)";
+  }}
+
+  style={{
+  background: "white",
+  padding: "35px 25px",
+  borderRadius: "18px",
+  textDecoration: "none",
+  color: "#0f172a",
+  boxShadow: "0 12px 28px rgba(0,0,0,0.08)",
+  transition: "all 0.3s ease",
+  cursor: "pointer",
+  transform: "translateY(0px)",
+  minHeight: "220px",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between"
+}}
     >
-      Saiba Mais
+      <div>
+        <div style={{
+          fontSize: "42px",
+          marginBottom: "18px"
+        }}>
+          {item[0]}
+        </div>
+
+        <h3 style={{
+          fontSize: "26px",
+          lineHeight: "1.25",
+          marginBottom: "12px"
+        }}>
+          {item[1]}
+        </h3>
+
+        <p style={{
+  color: "#64748b",
+  fontSize: "15px",
+  lineHeight: "1.6"
+}}>
+  {item[2]}
+</p>
+      </div>
+
+      <span style={{
+        color: "#1e3a8a",
+        fontWeight: "bold",
+        marginTop: "20px",
+        fontSize: "16px"
+      }}>
+        Saiba Mais →
+      </span>
     </Link>
+  ))}
+
+</div>
   </div>
-))}
+</section>
 
-          </div>
-        </div>
-      </section>
-
-      {/* BENEFÍCIOS */}
-      <section style={{ padding: "70px 20px" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <h2 style={{
-            textAlign: "center",
-            fontSize: "32px",
-            marginBottom: "40px"
-          }}>
-            Por que escolher a Creditomultibancos?
-          </h2>
-
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
-            gap: "20px"
-          }}>
-            <div>✔ Atendimento rápido</div>
-            <div>✔ Taxas competitivas</div>
-            <div>✔ Especialistas no mercado</div>
-            <div>✔ Soluções personalizadas</div>
-          </div>
-        </div>
-      </section>
-
-      {/* AUTORIDADE */}
+{/* PROFISSIONAL */}
 <section style={{
-  padding: "70px 20px",
-  background: "#ffffff"
+  padding: "90px 20px",
+  background: "white"
 }}>
   <div style={{
-    maxWidth: "950px",
+    maxWidth: "1100px",
     margin: "0 auto",
     textAlign: "center"
   }}>
@@ -265,283 +234,285 @@ function Home() {
       width: "90px",
       height: "90px",
       borderRadius: "50%",
-      background: "#1e3a8a",
-      color: "white",
-      margin: "0 auto 20px",
+      background: "linear-gradient(135deg,#1e3a8a,#0f172a)",
+      margin: "0 auto 25px",
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      fontSize: "32px",
+      color: "white",
+      fontSize: "34px",
       fontWeight: "bold"
     }}>
       CF
     </div>
 
     <h2 style={{
-      fontSize: "32px",
-      marginBottom: "20px",
+      fontSize: "42px",
+      marginBottom: "25px",
       color: "#0f172a"
     }}>
       Claudio Fernando
     </h2>
 
     <p style={{
-      fontSize: "18px",
+      fontSize: "22px",
       lineHeight: "1.8",
-      maxWidth: "760px",
-      margin: "0 auto 25px"
+      color: "#334155",
+      maxWidth: "900px",
+      margin: "0 auto 40px"
     }}>
-      
-Experiência consolidada no mercado financeiro, com atuação em instituições financeiras nas áreas de gestão de contas, investimentos e relacionamento com clientes.
+      Experiência consolidada no mercado financeiro,
+      com atuação em instituições financeiras nas áreas
+      de gestão de contas, investimentos e relacionamento com clientes.
 
-Profissional certificado CFP®, CEA e PQO Operações, focado em soluções estratégicas de crédito e planejamento financeiro.
-</p>
+      Profissional certificado CFP®, CEA e PQO Operações,
+      focado em soluções estratégicas de crédito e planejamento financeiro.
+    </p>
 
     <div style={{
-  display: "flex",
-  gap: "14px",
-  justifyContent: "center",
-  flexWrap: "wrap",
-  marginBottom: "28px"
-}}>
+      display: "flex",
+      gap: "18px",
+      justifyContent: "center",
+      flexWrap: "wrap"
+    }}>
 
-  <span style={{
-    background: "linear-gradient(135deg,#dbeafe,#eff6ff)",
-    color: "#1e3a8a",
-    padding: "12px 18px",
-    borderRadius: "999px",
-    fontWeight: "bold",
-    fontSize: "15px",
-    boxShadow: "0 6px 14px rgba(30,58,138,0.10)"
-  }}>
-    🏅 CEA • ANBIMA
-  </span>
+      {[
+        "🏅 CEA • ANBIMA",
+        "🏆 CFP® • Planejar",
+        "💼 Mercado Financeiro"
+      ].map((item, index) => (
+        <span
+          key={index}
+          style={{
+            background: "#eff6ff",
+            color: "#1e3a8a",
+            padding: "14px 22px",
+            borderRadius: "999px",
+            fontWeight: "bold",
+            fontSize: "16px",
+            boxShadow: "0 10px 20px rgba(0,0,0,0.06)"
+          }}
+        >
+          {item}
+        </span>
+      ))}
 
-  <span style={{
-    background: "linear-gradient(135deg,#dbeafe,#eff6ff)",
-    color: "#1e3a8a",
-    padding: "12px 18px",
-    borderRadius: "999px",
-    fontWeight: "bold",
-    fontSize: "15px",
-    boxShadow: "0 6px 14px rgba(30,58,138,0.10)"
-  }}>
-    🏆 CFP® • Planejar
-  </span>
+    </div>
 
-  <span style={{
-    background: "linear-gradient(135deg,#dbeafe,#eff6ff)",
-    color: "#1e3a8a",
-    padding: "12px 18px",
-    borderRadius: "999px",
-    fontWeight: "bold",
-    fontSize: "15px",
-    boxShadow: "0 6px 14px rgba(30,58,138,0.10)"
-  }}>
-    💼 Mercado Financeiro
-  </span>
-
-</div>
-
-    <a
-      href="https://www.linkedin.com/in/claudiofernand/"
-      target="_blank"
-      style={{
-        background:"#0A66C2",
-        color:"white",
-        padding:"14px 26px",
-        borderRadius:"8px",
-        textDecoration:"none",
-        fontWeight:"bold",
-        display:"inline-block"
-      }}
-    >
-      Ver Perfil no LinkedIn
-    </a>
-    
+    <div style={{ marginTop: "40px" }}>
+      <a
+        href="https://www.linkedin.com/in/claudiofernand/"
+        target="_blank"
+        style={{
+          background: "#0A66C2",
+          color: "white",
+          padding: "15px 28px",
+          borderRadius: "8px",
+          textDecoration: "none",
+          fontWeight: "bold"
+        }}
+      >
+        Conheça Minha Trajetória no LinkedIn
+      </a>
+    </div>
 
   </div>
 </section>
 
 {/* DEPOIMENTOS */}
 <section style={{
-  padding: "70px 20px",
+  padding: "90px 20px",
   background: "#f8fafc"
 }}>
   <div style={{
-    maxWidth: "1100px",
+    maxWidth: "1200px",
     margin: "0 auto"
   }}>
 
     <h2 style={{
       textAlign: "center",
-      fontSize: "32px",
-      marginBottom: "40px",
+      fontSize: "42px",
+      marginBottom: "15px",
       color: "#0f172a"
     }}>
       O que nossos clientes dizem
     </h2>
 
+    <p style={{
+      textAlign: "center",
+      fontSize: "18px",
+      color: "#64748b",
+      marginBottom: "45px"
+    }}>
+      Confiança construída com atendimento sério e transparente.
+    </p>
+
     <div style={{
       display: "grid",
-      gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
-      gap: "20px"
+      gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))",
+      gap: "25px"
     }}>
 
-      <div style={{
-        background: "white",
-        padding: "25px",
-        borderRadius: "14px",
-        boxShadow: "0 8px 20px rgba(0,0,0,0.06)"
-      }}>
-        <p>"Atendimento rápido e transparente. Recomendo."</p>
-        <strong>- Cliente satisfeito</strong>
-      </div>
+      {[
+        ["⭐⭐⭐⭐⭐", "Atendimento rápido e transparente. Explicou tudo com clareza.", "Cliente satisfeito"],
 
-      <div style={{
-        background: "white",
-        padding: "25px",
-        borderRadius: "14px",
-        boxShadow: "0 8px 20px rgba(0,0,0,0.06)"
-      }}>
-        <p>"Excelente suporte durante todo o processo."</p>
-        <strong>- Cliente atendido</strong>
-      </div>
+        ["⭐⭐⭐⭐⭐", "Excelente suporte do início ao fim. Processo muito tranquilo.", "Cliente atendido"],
 
-      <div style={{
-        background: "white",
-        padding: "25px",
-        borderRadius: "14px",
-        boxShadow: "0 8px 20px rgba(0,0,0,0.06)"
-      }}>
-        <p>"Profissional sério, explicou tudo com clareza."</p>
-        <strong>- Cliente aprovado</strong>
-      </div>
+        ["⭐⭐⭐⭐⭐", "Profissional sério e preparado. Recomendo com segurança.", "Cliente aprovado"]
+      ].map((item, index) => (
+        <div
+          key={index}
+          style={{
+            background: "white",
+            padding: "30px",
+            borderRadius: "18px",
+            boxShadow: "0 12px 28px rgba(0,0,0,0.06)"
+          }}
+        >
+          <div style={{
+            fontSize: "22px",
+            marginBottom: "18px"
+          }}>
+            {item[0]}
+          </div>
+
+          <p style={{
+            fontSize: "18px",
+            lineHeight: "1.7",
+            color: "#334155",
+            marginBottom: "20px"
+          }}>
+            {item[1]}
+          </p>
+
+          <strong style={{
+            color: "#1e3a8a"
+          }}>
+            {item[2]}
+          </strong>
+        </div>
+      ))}
 
     </div>
+
   </div>
 </section>
 
-      {/* CTA FINAL */}
-      <section style={{
-        background: "#1e3a8a",
-        color: "white",
-        padding: "70px 20px",
-        textAlign: "center"
-      }}>
-        <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>
-          Fale agora com um especialista
-        </h2>
+   {/* CTA FINAL */}
+<section style={{
+  background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
+  color: "white",
+  padding: "90px 20px",
+  textAlign: "center"
+}}>
+  <div style={{
+    maxWidth: "900px",
+    margin: "0 auto"
+  }}>
 
-        <a
-          href="https://wa.me/5511933739876"
-          target="_blank"
-          style={{
-            background: "#25D366",
-            color: "white",
-            padding: "16px 28px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "bold"
-          }}
-        >
-          Chamar no WhatsApp
-        </a>
-            </section>
-
-    </div>
-    </>
-=======
-
-function Home() {
-  return (
-    <div style={{ 
-      textAlign: "center", 
-      padding: "40px 20px",
-      maxWidth: "900px",
-      margin: "0 auto"
+    <p style={{
+      color: "#93c5fd",
+      fontWeight: "bold",
+      letterSpacing: "1px",
+      marginBottom: "15px"
     }}>
+      ATENDIMENTO RÁPIDO E PERSONALIZADO
+    </p>
 
-      <h1 style={{ 
-        fontSize: '32px',
-        lineHeight: '1.3',
-        marginBottom: '20px'
-      }}>
-        Crédito e Soluções Financeiras com as Melhores Taxas
-      </h1>
+    <h2 style={{
+      fontSize: "48px",
+      color:"white", 
 
-      <p style={{ fontSize: "18px", marginBottom: "30px" }}>
-        Compare opções de crédito, financiamento, consórcio e seguros.
-        Encontre a melhor condição com a Creditomultibancos.
-      </p>
+textShadow:"0 4px 10px rgba(0,0,0,0.18)", 
+      lineHeight: "1.2",
+      marginBottom: "20px"
+    }}>
+      Descubra a Melhor Solução
+      <br />
+      Financeira Para Você Hoje
+    </h2>
 
-      <a 
-        href="https://wa.me/5511933739876"
-        target="_blank"
-        style={{
-          background: '#25D366',
-          color: 'white',
-          padding: '15px 25px',
-          borderRadius: '8px',
-          textDecoration: 'none',
-          fontWeight: 'bold'
-        }}
-      >
-        Falar no WhatsApp
-      </a>
+    <p style={{
+      fontSize: "22px",
+      color: "#dbeafe",
+      marginBottom: "35px"
+    }}>
+      Simulação sem compromisso no WhatsApp.
+    </p>
 
-      <hr style={{ margin: "40px 0" }} />
+    <a
+      href="https://wa.me/5511933739876"
+      target="_blank"
+      style={{
+        background: "#25D366",
+        color: "white",
+        padding: "18px 34px",
+        borderRadius: "10px",
+        textDecoration: "none",
+        fontWeight: "bold",
+        fontSize: "22px",
+        display: "inline-block",
+        boxShadow: "0 15px 30px rgba(0,0,0,0.18)"
+      }}
+    >
+      💬 Falar no WhatsApp Agora
+    </a>
 
-      <h2>Nossos Serviços</h2>
+    <p style={{
+      marginTop: "18px",
+      color: "#cbd5e1",
+      fontSize: "15px"
+    }}>
+      Resposta rápida em horário comercial.
+    </p>
 
-      <div style={{ marginTop: "20px" }}>
-  <p>
-    <Link to="/financiamento-imobiliario">Financiamento Imobiliário</Link>
-  </p>
+  </div>
+</section>
 
-  <p>
-    <Link to="/emprestimo-consignado">Empréstimo Consignado</Link>
-  </p>
+  </div>
+</>
 
-  <p>
-    <Link to="/credito-com-garantia-de-imovel">Crédito com Garantia de Imóvel</Link>
-  </p>
-
-  <p>
-    <Link to="/consorcio">Consórcio</Link>
-  </p>
-</div>
-
-    </div>
->>>>>>> 3ccb740b01989aa12f04869fa2f8150bac055d9a
   );
 }
 
 function App() {
   return (
-<<<<<<< HEAD
     <HelmetProvider>
-     <BrowserRouter>
-=======
-    <BrowserRouter>
->>>>>>> 3ccb740b01989aa12f04869fa2f8150bac055d9a
-      <Navbar />
+      <BrowserRouter>
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/credito-com-garantia-de-imovel" element={<CreditoImovel />} />
-        <Route path="/financiamento-imobiliario" element={<FinanciamentoImobiliario />} />
-        <Route path="/emprestimo-consignado" element={<EmprestimoConsignado />} />
-        <Route path="/consorcio" element={<Consorcio />} />
-        <Route path="/seguro" element={<Seguro />} />
-      </Routes>
-<<<<<<< HEAD
-      <Footer />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/credito-com-garantia-de-imovel" element={<CreditoImovel />} />
+          <Route path="/financiamento-imobiliario" element={<FinanciamentoImobiliario />} />
+          <Route path="/emprestimo-consignado" element={<EmprestimoConsignado />} />
+          <Route path="/consorcio" element={<Consorcio />} />
+          <Route path="/seguro" element={<Seguro />} />
+        </Routes>
+
+        <Footer />
+        <a
+  href="https://wa.me/5511933739876"
+  target="_blank"
+  style={{
+    position: "fixed",
+    bottom: "25px",
+    right: "25px",
+    background: "#25D366",
+    color: "white",
+    padding: "14px 18px",
+    borderRadius: "999px",
+    textDecoration: "none",
+    fontWeight: "bold",
+    boxShadow: "0 10px 25px rgba(0,0,0,0.18)",
+    zIndex: "9999",
+    fontSize: "18px"
+  }}
+>
+  💬 WhatsApp
+</a>
       </BrowserRouter>
-</HelmetProvider>
-=======
-    </BrowserRouter>
->>>>>>> 3ccb740b01989aa12f04869fa2f8150bac055d9a
+    </HelmetProvider>
   );
 }
 
