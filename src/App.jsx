@@ -614,6 +614,15 @@ function App() {
         <a
   href="https://wa.me/5511933739876"
   target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => {
+    if (window.gtag) {
+      window.gtag("event", "whatsapp_click", {
+        event_category: "Contato",
+        event_label: "Botao Flutuante"
+      });
+    }
+  }}
   style={{
     position: "fixed",
     bottom: "25px",
