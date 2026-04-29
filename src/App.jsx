@@ -2,7 +2,6 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-
 import CreditoImovel from "./pages/CreditoImovel.jsx";
 import FinanciamentoImobiliario from "./pages/FinanciamentoImobiliario.jsx";
 import EmprestimoConsignado from "./pages/EmprestimoConsignado.jsx";
@@ -62,6 +61,22 @@ function Home() {
       ]
     })}
   </script>
+
+  <script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Crédito Multi Bancos",
+  "url": "https://www.creditomultibancos.com.br/",
+  "telephone": "+55 11 93373-9876",
+  "areaServed": "Brasil",
+  "description": "Especialistas em empréstimo consignado, FGTS, financiamento imobiliário e crédito com garantia de imóvel.",
+  "sameAs": [
+    "https://www.linkedin.com/in/claudiofernand/"
+  ]
+})}
+</script>
+
 </Helmet>
 
   <div style={{ fontFamily: "Arial, sans-serif" }}>
