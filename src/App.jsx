@@ -13,13 +13,15 @@ function Home() {
   return (
     <>
   <Helmet>
-    <title>Crédito Multi Bancos | Soluções Financeiras</title>
+  <title>
+    Crédito Multi Bancos | Consignado, FGTS, Financiamento e Home Equity
+  </title>
 
-    <meta
-      name="description"
-      content="Crédito com garantia, financiamento, consignado, consórcio e seguros com atendimento consultivo."
-    />
-  </Helmet>
+  <meta
+    name="description"
+    content="Especialistas em empréstimo consignado, FGTS, financiamento imobiliário e crédito com garantia de imóvel. Simule pelo WhatsApp."
+  />
+</Helmet>
 
   <div style={{ fontFamily: "Arial, sans-serif" }}>
 
