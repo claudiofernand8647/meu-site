@@ -21,6 +21,47 @@ function Home() {
     name="description"
     content="Especialistas em empréstimo consignado, FGTS, financiamento imobiliário e crédito com garantia de imóvel. Simule pelo WhatsApp."
   />
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Como funciona o empréstimo consignado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As parcelas são descontadas em folha ou benefício, normalmente com taxas reduzidas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quem pode antecipar o FGTS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trabalhadores aderentes ao saque-aniversário com saldo disponível."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Crédito com garantia de imóvel vale a pena?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pode oferecer taxas menores e prazos maiores, conforme análise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo demora uma análise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Em muitos casos, o retorno inicial acontece rapidamente via WhatsApp."
+          }
+        }
+      ]
+    })}
+  </script>
 </Helmet>
 
   <div style={{ fontFamily: "Arial, sans-serif" }}>
