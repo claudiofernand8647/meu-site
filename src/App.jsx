@@ -400,6 +400,68 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
   </div>
 </section>
 
+<section
+  style={{
+    padding: "90px 20px",
+    background: "white"
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1000px",
+      margin: "0 auto"
+    }}
+  >
+    <h2
+      style={{
+        textAlign: "center",
+        fontSize: "42px",
+        marginBottom: "15px",
+        color: "#0f172a"
+      }}
+    >
+      Perguntas Frequentes
+    </h2>
+
+    <p
+      style={{
+        textAlign: "center",
+        color: "#64748b",
+        fontSize: "18px",
+        marginBottom: "40px"
+      }}
+    >
+      Tire dúvidas rápidas sobre nossas soluções financeiras.
+    </p>
+
+    {[
+      ["Como funciona o empréstimo consignado?", "O empréstimo consignado é uma das modalidades de crédito mais seguras e acessíveis do mercado. As parcelas são descontadas diretamente da sua folha de pagamento ou do benefício (INSS), o que reduz o risco da operação e nos permite oferecer taxas de juros significativamente menores e prazos mais longos para o seu conforto."],
+      ["Quem pode antecipar o FGTS?", "Essa modalidade é ideal para trabalhadores que já aderiram à modalidade 'Saque-Aniversário' no aplicativo do FGTS e possuem saldo disponível em contas ativas ou inativas. É a forma mais rápida de acessar o seu dinheiro, sem comprometer o seu orçamento mensal, já que o pagamento é descontado diretamente do seu fundo."],
+      ["Crédito com garantia de imóvel vale a pena?", "Sim, vale muito a pena. Ao utilizar seu imóvel como garantia, você obtém as taxas de juros mais baixas do mercado e prazos de pagamento muito mais estendidos. É a solução perfeita para quem busca capital para realizar grandes projetos, quitar dívidas caras ou investir, mantendo o controle total das finanças com parcelas que cabem no bolso"],
+      ["Quanto tempo demora uma análise?", "Valorizamos o seu tempo. Nosso processo é ágil e 100% digital: assim que você nos envia seus dados, nossa equipe inicia a avaliação e entra em contato via WhatsApp com o retorno. Em grande parte dos casos, você recebe uma resposta preliminar quase imediata, garantindo rapidez para a liberação do seu crédito."]
+    ].map((item, index) => (
+      <div
+        key={index}
+        style={{
+          background: "#f8fafc",
+          padding: "24px",
+          borderRadius: "14px",
+          marginBottom: "18px",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.05)"
+        }}
+      >
+        <h3 style={{ color: "#1e3a8a", marginBottom: "10px" }}>
+          {item[0]}
+        </h3>
+
+        <p style={{ color: "#334155", lineHeight: "1.7" }}>
+          {item[1]}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
+
    {/* CTA FINAL */}
 <section style={{
   background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
