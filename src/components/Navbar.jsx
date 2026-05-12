@@ -39,7 +39,7 @@ function Navbar() {
     src={logo}
     alt="Crédito Multi Bancos"
     style={{
-      height: "120px",
+      height: "60px",
       objectFit: "contain"
     }}
   />
