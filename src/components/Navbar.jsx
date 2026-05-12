@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Navbar() {
   return (
     <nav
       style={{
-        background: "rgba(15,23,42,0.96)",
+        background: "rgba(21, 23, 28, 0.96)",
         backdropFilter: "blur(10px)",
         position: "sticky",
         top: "0",
@@ -27,17 +28,22 @@ function Navbar() {
 
         {/* LOGO */}
         <Link
-          to="/"
-          style={{
-            color: "white",
-            textDecoration: "none",
-            fontWeight: "bold",
-            fontSize: "30px",
-            letterSpacing: "-0.5px"
-          }}
-        >
-          Crédito Multi Bancos
-        </Link>
+  to="/"
+  style={{
+    display: "flex",
+    alignItems: "center",
+    textDecoration: "none"
+  }}
+>
+  <img
+    src={logo}
+    alt="Crédito Multi Bancos"
+    style={{
+      height: "60px",
+      objectFit: "contain"
+    }}
+  />
+</Link>
 
         {/* MENU */}
         <div
