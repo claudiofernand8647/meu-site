@@ -120,21 +120,22 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
         </p>
 
         <a
-          href="https://wa.me/5511933739876"
-          target="_blank"
-          style={{
-            background: "#25D366",
-            color: "white",
-            padding: "18px 34px",
-            borderRadius: "10px",
-            textDecoration: "none",
-            fontWeight: "bold",
-            fontSize: "20px",
-            display: "inline-block"
-          }}
-        >
-          Simular no WhatsApp
-        </a>
+  href="https://shop.franq.com.br/claudio-silva2982/inicio"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    background: "#25D366",
+    color: "white",
+    padding: "18px 34px",
+    borderRadius: "10px",
+    textDecoration: "none",
+    fontWeight: "bold",
+    fontSize: "20px",
+    display: "inline-block"
+  }}
+>
+  Receber Proposta Agora
+</a>
 
       </div>
     </section>
