@@ -128,8 +128,9 @@ function Consorcio() {
           textAlign: "center"
         }}>
           <h2 style={{
-            fontSize: window.innerWidth < 768 ? "40px" : "54px",
-            marginBottom: "40px"
+              textAlign: "center",
+              fontSize: window.innerWidth < 768 ? "30px" : "40px",
+              marginBottom: "40px"
           }}>
             Como Funciona
           </h2>
@@ -172,7 +173,9 @@ function Consorcio() {
           textAlign: "center"
         }}>
           <h2 style={{
-            fontSize: window.innerWidth < 768 ? "32px" : "42px",
+              textAlign: "center",
+              fontSize: window.innerWidth < 768 ? "30px" : "40px",
+              marginBottom: "40px",
             color:"white", 
 
 textShadow:"0 4px 10px rgba(0,0,0,0.18)", 
