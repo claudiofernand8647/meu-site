@@ -33,7 +33,7 @@ function FinanciamentoImobiliario() {
             </p>
 
             <h1 style={{
-  fontSize: window.innerWidth < 768 ? "40px" : "54px",
+  fontSize: window.innerWidth < 768 ? "36px" : "54px",
   lineHeight: "1.15",
   margin: "20px 0",
   color: "white",
@@ -46,7 +46,7 @@ function FinanciamentoImobiliario() {
             </h1>
 
             <p style={{
-              fontSize: window.innerWidth < 768 ? "20px" : "24px",
+              fontSize: window.innerWidth < 768 ? "18px" : "24px",
               color: "#dbeafe",
               marginBottom: "35px"
             }}>

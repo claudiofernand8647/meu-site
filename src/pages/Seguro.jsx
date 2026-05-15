@@ -33,7 +33,7 @@ function Seguro() {
             </p>
 
             <h1 style={{
-  fontSize: window.innerWidth < 768 ? "40px" : "54px",
+  fontSize: window.innerWidth < 768 ? "36px" : "54px",
   lineHeight: "1.15",
   margin: "20px 0",
   color: "white",
@@ -46,7 +46,7 @@ function Seguro() {
             </h1>
 
             <p style={{
-              fontSize: window.innerWidth < 768 ? "20px" : "24px",
+              fontSize: window.innerWidth < 768 ? "18px" : "24px",
               color: "#dbeafe",
               marginBottom: "35px"
             }}>
@@ -74,7 +74,7 @@ function Seguro() {
 
         {/* BENEFÍCIOS */}
         <section style={{
-          padding: "80px 20px",
+          padding: window.innerWidth < 768 ? "60px 20px" : "80px 20px",
           background: "#f8fafc"
         }}>
           <div style={{
@@ -124,7 +124,7 @@ function Seguro() {
 
         {/* PROCESSO */}
         <section style={{
-          padding: "80px 20px",
+          padding: window.innerWidth < 768 ? "60px 20px" : "80px 20px",
           textAlign: "center"
         }}>
           <h2 style={{
@@ -168,7 +168,7 @@ function Seguro() {
         <section style={{
           background: "#0f172a",
           color: "white",
-          padding: "80px 20px",
+          padding: window.innerWidth < 768 ? "60px 20px" : "80px 20px",
           textAlign: "center"
         }}>
           <h2 style={{

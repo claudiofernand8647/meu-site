@@ -33,7 +33,7 @@ function CreditoImovel() {
             </p>
 
             <h1 style={{
-  fontSize: window.innerWidth < 768 ? "40px" : "54px",
+  fontSize: window.innerWidth < 768 ? "36px" : "54px",
   lineHeight: "1.15",
   margin: "20px 0",
   color: "white",
