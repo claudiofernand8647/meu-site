@@ -172,7 +172,7 @@ function Consorcio() {
           textAlign: "center"
         }}>
           <h2 style={{
-            fontSize: "42px",
+            fontSize: window.innerWidth < 768 ? "32px" : "42px",
             color:"white", 
 
 textShadow:"0 4px 10px rgba(0,0,0,0.18)", 
