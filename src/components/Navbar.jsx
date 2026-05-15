@@ -49,9 +49,14 @@ function Navbar() {
         <div
   style={{
     display: "flex",
-    gap: "22px",
+    gap: window.innerWidth < 768 ? "10px" : "22px",
     alignItems: "center",
-    flexWrap: "wrap"
+    overflowX: "auto",
+    whiteSpace: "nowrap",
+    scrollbarWidth: "none",
+    msOverflowStyle: "none",
+    flex: 1,
+    justifyContent: "center"
   }}
 >
           {[
@@ -65,12 +70,13 @@ function Navbar() {
               key={index}
               to={item[1]}
               style={{
-                color: "#e2e8f0",
-                textDecoration: "none",
-                fontWeight: "600",
-                fontSize: "15px",
-                transition: "0.3s"
-              }}
+  color: "#e2e8f0",
+  textDecoration: "none",
+  fontWeight: "600",
+  fontSize: window.innerWidth < 768 ? "12px" : "15px",
+  padding: window.innerWidth < 768 ? "4px 0" : "0",
+  transition: "0.3s"
+}}
               onMouseEnter={(e) => {
                 e.currentTarget.style.color = "#22c55e";
               }}
