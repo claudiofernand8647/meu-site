@@ -106,11 +106,11 @@ function FinanciamentoImobiliario() {
                   key={index}
                   style={{
                     background: "white",
-                    padding: "30px",
+                    padding: window.innerWidth < 768 ? "22px" : "30px",
                     borderRadius: "18px",
                     boxShadow: "0 10px 25px rgba(0,0,0,0.06)",
                     fontWeight: "bold",
-                    fontSize: "20px",
+                    fontSize: window.innerWidth < 768 ? "17px" : "20px",
                     textAlign: "center"
                   }}
                 >
