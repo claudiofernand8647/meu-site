@@ -280,7 +280,7 @@ function Home() {
 
 {/* PROFISSIONAL */}
 <section style={{
-  padding: "90px 20px",
+  padding: window.innerWidth < 768 ? "60px 20px" : "90px 20px",
   background: "white"
 }}>
   <div style={{
@@ -290,8 +290,8 @@ function Home() {
   }}>
 
     <div style={{
-      width: "90px",
-      height: "90px",
+      width: window.innerWidth < 768 ? "72px" : "90px",
+height: window.innerWidth < 768 ? "72px" : "90px",
       borderRadius: "50%",
       background: "linear-gradient(135deg,#1e3a8a,#0f172a)",
       margin: "0 auto 25px",
@@ -299,14 +299,14 @@ function Home() {
       alignItems: "center",
       justifyContent: "center",
       color: "white",
-      fontSize: "34px",
+      fontSize: window.innerWidth < 768 ? "28px" : "34px",
       fontWeight: "bold"
     }}>
       CF
     </div>
 
     <h2 style={{
-      fontSize: "42px",
+      fontSize: window.innerWidth < 768 ? "34px" : "42px",
       marginBottom: "25px",
       color: "#0f172a"
     }}>
@@ -314,8 +314,8 @@ function Home() {
     </h2>
 
     <p style={{
-      fontSize: "22px",
-      lineHeight: "1.8",
+      fontSize: window.innerWidth < 768 ? "18px" : "22px",
+lineHeight: window.innerWidth < 768 ? "1.6" : "1.8",
       color: "#334155",
       maxWidth: "900px",
       margin: "0 auto 40px"
