@@ -19,7 +19,7 @@ function Consorcio() {
         <section style={{
           background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
           color: "white",
-          padding: "110px 20px" ,
+          padding: window.innerWidth < 768 ? "60px 18px" : "110px 20px",
           textAlign: "center"
         }}>
           <div style={{ maxWidth: "980px", margin: "0 auto" }}>
@@ -33,19 +33,20 @@ function Consorcio() {
             </p>
 
             <h1 style={{
-              fontSize: "54px",
-              lineHeight: "1.15",
-              margin: "20px 0",
-              color: "white",
-              textShadow: "0 4px 10px rgba(0,0,0,0.18)"
-            }}>
-              Consórcio Inteligente
-              <br />
-              Sem Juros e Planejado
-            </h1>
+  fontSize: window.innerWidth < 768 ? "40px" : "54px",
+  lineHeight: "1.15",
+  margin: "20px 0",
+  color: "white",
+  textShadow: "0 4px 10px rgba(0,0,0,0.18)",
+  wordBreak: "break-word"
+}}>
+  Consórcio Inteligente
+  <br />
+  Sem Juros e Planejado
+</h1>
 
             <p style={{
-              fontSize: "24px",
+              fontSize: window.innerWidth < 768 ? "18px" : "24px",
               color: "#dbeafe",
               marginBottom: "35px"
             }}>
@@ -58,11 +59,11 @@ function Consorcio() {
               style={{
                 background: "#25D366",
                 color: "white",
-                padding: "18px 34px",
+                padding: window.innerWidth < 768 ? "14px 24px" : "18px 34px",
                 borderRadius: "10px",
                 textDecoration: "none",
                 fontWeight: "bold",
-                fontSize: "20px"
+                fontSize: window.innerWidth < 768 ? "16px" : "20px"
               }}
             >
               Montar Meu Plano
@@ -83,7 +84,7 @@ function Consorcio() {
 
             <h2 style={{
               textAlign: "center",
-              fontSize: "40px",
+              fontSize: window.innerWidth < 768 ? "30px" : "40px",
               marginBottom: "40px"
             }}>
               Vantagens
