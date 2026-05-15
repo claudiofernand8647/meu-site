@@ -11,7 +11,7 @@ function Navbar() {
         top: "0",
         zIndex: "999",
         borderBottom: "1px solid rgba(255,255,255,0.08)",
-        padding: "16px 24px"
+        padding: window.innerWidth < 768 ? "10px 14px" : "16px 24px",
       }}
     >
       <div
@@ -22,7 +22,7 @@ function Navbar() {
           justifyContent: "space-between",
           alignItems: "center",
           gap: "18px",
-          flexWrap: "wrap"
+          flexWrap: "nowrap"
         }}
       >
 
@@ -36,13 +36,13 @@ function Navbar() {
   }}
 >
   <img
-    src={logo}
-    alt="Crédito Multi Bancos"
-    style={{
-      height: "78px",
-      objectFit: "contain"
-    }}
-  />
+  src={logo}
+  alt="Crédito Multi Bancos"
+  style={{
+    height: window.innerWidth < 768 ? "42px" : "72px",
+    objectFit: "contain"
+  }}
+/>
 </Link>
 
         {/* MENU */}
