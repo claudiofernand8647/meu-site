@@ -33,19 +33,20 @@ function EmprestimoConsignado() {
             </p>
 
             <h1 style={{
-              fontSize: window.innerWidth < 768 ? "40px" : "54px",
-              lineHeight: "1.15",
-              margin: "20px 0",
-              color: "white",
-              textShadow: "0 4px 10px rgba(0,0,0,0.18)"
-            }}>
+  fontSize: window.innerWidth < 768 ? "40px" : "54px",
+  lineHeight: "1.15",
+  margin: "20px 0",
+  color: "white",
+  textShadow: "0 4px 10px rgba(0,0,0,0.18)",
+  wordBreak: "break-word"
+}}>
               Empréstimo Consignado
               <br />
               Segurança e taxas reduzidas
             </h1>
 
             <p style={{
-              fontSize: "24px",
+              fontSize: window.innerWidth < 768 ? "20px" : "24px",
               color: "#dbeafe",
               marginBottom: "35px"
             }}>
@@ -151,7 +152,7 @@ function EmprestimoConsignado() {
                 key={index}
                 style={{
                   background: "#eff6ff",
-                  padding: "28px",
+                  padding: window.innerWidth < 768 ? "22px" : "28px",
                   borderRadius: "18px",
                   fontWeight: "bold"
                 }}

@@ -33,12 +33,13 @@ function Seguro() {
             </p>
 
             <h1 style={{
-              fontSize: window.innerWidth < 768 ? "40px" : "54px",
-              lineHeight: "1.15",
-              margin: "20px 0",
-              color: "white",
-              textShadow: "0 4px 10px rgba(0,0,0,0.18)"
-            }}>
+  fontSize: window.innerWidth < 768 ? "40px" : "54px",
+  lineHeight: "1.15",
+  margin: "20px 0",
+  color: "white",
+  textShadow: "0 4px 10px rgba(0,0,0,0.18)",
+  wordBreak: "break-word"
+}}>
               Seguros Sob Medida
               <br />
               Para Você e Seu Patrimônio
