@@ -51,9 +51,10 @@ function Navbar() {
     display: "flex",
     gap: window.innerWidth < 768 ? "10px" : "22px",
     alignItems: "center",
-    overflowX: "auto",
-    whiteSpace: "nowrap",
-    scrollbarWidth: "none",
+    overflowX: window.innerWidth < 768 ? "visible" : "auto",
+    whiteSpace: window.innerWidth < 768 ? "normal" : "nowrap",
+
+flexWrap: window.innerWidth < 768 ? "wrap" : "nowrap",    scrollbarWidth: "none",
     msOverflowStyle: "none",
     flex: 1,
     justifyContent: "center",
@@ -92,7 +93,8 @@ function Navbar() {
           ))}
 
           {/* CTA */}
-          <a
+          {window.innerWidth >= 768 && (
+  <a
             href="https://wa.me/5511933739876"
             target="_blank"
             style={{
@@ -108,6 +110,7 @@ function Navbar() {
           >
             WhatsApp
           </a>
+          )}
         </div>
 
       </div>
