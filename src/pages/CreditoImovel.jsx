@@ -33,18 +33,19 @@ function CreditoImovel() {
             </p>
 
             <h1 style={{
-              fontSize: "52px",
-              color:"white",
-textShadow:"0 4px 10px rgba(0,0,0,0.18)",
-              lineHeight: "1.15",
-              margin: "18px 0"
-            }}>
+  fontSize: window.innerWidth < 768 ? "40px" : "54px",
+  lineHeight: "1.15",
+  margin: "20px 0",
+  color: "white",
+  textShadow: "0 4px 10px rgba(0,0,0,0.18)",
+  wordBreak: "break-word"
+}}>
               Crédito com Garantia de Imóvel com Taxas Baixas e Prazos Estendidos
               <br />
             </h1>
 
             <p style={{
-              fontSize: "22px",
+              fontSize: window.innerWidth < 768 ? "18px" : "24px",
               color: "#dbeafe",
               marginBottom: "35px"
             }}>
@@ -57,11 +58,11 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
               style={{
                 background: "#25D366",
                 color: "white",
-                padding: "18px 34px",
+                padding: window.innerWidth < 768 ? "14px 24px" : "18px 34px",
                 borderRadius: "10px",
                 textDecoration: "none",
                 fontWeight: "bold",
-                fontSize: "20px"
+                fontSize: window.innerWidth < 768 ? "16px" : "20px"
               }}
             >
               Falar com um Especialista
@@ -82,7 +83,7 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
 
             <h2 style={{
               textAlign: "center",
-              fontSize: "40px",
+              fontSize: window.innerWidth < 768 ? "30px" : "40px",
               marginBottom: "40px"
             }}>
               Vantagens
@@ -126,7 +127,7 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
           textAlign: "center"
         }}>
           <h2 style={{
-            fontSize: "40px",
+            fontSize: window.innerWidth < 768 ? "30px" : "40px",
             marginBottom: "40px"
           }}>
             Como Funciona
@@ -170,7 +171,7 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
           textAlign: "center"
         }}>
           <h2 style={{
-            fontSize: "42px",
+            fontSize: window.innerWidth < 768 ? "32px" : "42px",
             color:"white",
 textShadow:"0 4px 10px rgba(0,0,0,0.18)",
             marginBottom: "20px"
@@ -184,11 +185,11 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
             style={{
               background: "#25D366",
               color: "white",
-              padding: "18px 34px",
+              padding: window.innerWidth < 768 ? "14px 24px" : "18px 34px",
               borderRadius: "10px",
               textDecoration: "none",
               fontWeight: "bold",
-              fontSize: "20px"
+              fontSize: window.innerWidth < 768 ? "16px" : "20px"
             }}
           >
             Falar com um Especialista
