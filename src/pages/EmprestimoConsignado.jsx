@@ -59,11 +59,11 @@ function EmprestimoConsignado() {
               style={{
                 background: "#25D366",
                 color: "white",
-                padding: "18px 34px",
+                padding: window.innerWidth < 768 ? "14px 24px" : "18px 34px",
                 borderRadius: "10px",
                 textDecoration: "none",
                 fontWeight: "bold",
-                fontSize: "20px"
+                fontSize: window.innerWidth < 768 ? "16px" : "20px"
               }}
             >
               Quero Simular Agora
