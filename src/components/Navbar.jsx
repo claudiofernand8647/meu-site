@@ -46,7 +46,7 @@ function Navbar() {
 </Link>
 
         {/* MENU */}
-        <div
+       <div
   style={{
     display: "flex",
     gap: window.innerWidth < 768 ? "10px" : "22px",
@@ -56,9 +56,12 @@ function Navbar() {
     scrollbarWidth: "none",
     msOverflowStyle: "none",
     flex: 1,
-    justifyContent: "center"
+    justifyContent: "center",
+    width: "100%",
+    paddingBottom: window.innerWidth < 768 ? "4px" : "0"
   }}
 >
+
           {[
             ["Crédito com Garantia", "/credito-com-garantia-de-imovel"],
             ["Financiamento", "/financiamento-imobiliario"],
@@ -93,15 +96,15 @@ function Navbar() {
             href="https://wa.me/5511933739876"
             target="_blank"
             style={{
-              background: "#25D366",
-              color: "white",
-              padding: "12px 18px",
-              borderRadius: "10px",
-              textDecoration: "none",
-              fontWeight: "bold",
-              fontSize: "15px",
-              boxShadow: "0 8px 20px rgba(0,0,0,0.15)"
-            }}
+  background: "#25D366",
+  color: "white",
+  padding: window.innerWidth < 768 ? "8px 12px" : "12px 18px",
+  borderRadius: "10px",
+  textDecoration: "none",
+  fontWeight: "bold",
+  fontSize: window.innerWidth < 768 ? "12px" : "15px",
+  boxShadow: "0 8px 20px rgba(0,0,0,0.15)"
+}}
           >
             WhatsApp
           </a>
