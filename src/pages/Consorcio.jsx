@@ -153,7 +153,7 @@ function Consorcio() {
                 key={index}
                 style={{
                   background: "#eff6ff",
-                  padding: "28px",
+                  padding: window.innerWidth < 768 ? "22px" : "30px",
                   borderRadius: "18px",
                   fontWeight: "bold"
                 }}
@@ -169,7 +169,7 @@ function Consorcio() {
         <section style={{
           background: "#0f172a",
           color: "white",
-          padding: "80px 20px",
+          padding: window.innerWidth < 768 ? "60px 20px" : "80px 20px",
           textAlign: "center"
         }}>
           <h2 style={{

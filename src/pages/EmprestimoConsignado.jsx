@@ -84,7 +84,7 @@ function EmprestimoConsignado() {
 
             <h2 style={{
               textAlign: "center",
-              fontSize: "40px",
+              fontSize: window.innerWidth < 768 ? "30px" : "40px",
               marginBottom: "40px"
             }}>
               Vantagens
@@ -128,7 +128,7 @@ function EmprestimoConsignado() {
           textAlign: "center"
         }}>
           <h2 style={{
-            fontSize: "40px",
+            fontSize: window.innerWidth < 768 ? "30px" : "40px",
             marginBottom: "40px"
           }}>
             Como Funciona
@@ -172,7 +172,7 @@ function EmprestimoConsignado() {
           textAlign: "center"
         }}>
           <h2 style={{
-            fontSize: "42px",
+            fontSize: window.innerWidth < 768 ? "30px" : "42px",
             color:"white", 
 
 textShadow:"0 4px 10px rgba(0,0,0,0.18)", 

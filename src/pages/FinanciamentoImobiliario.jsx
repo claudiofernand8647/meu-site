@@ -84,7 +84,7 @@ function FinanciamentoImobiliario() {
 
             <h2 style={{
               textAlign: "center",
-              fontSize: "40px",
+              fontSize: window.innerWidth < 768 ? "30px" : "40px",
               marginBottom: "40px"
             }}>
               Vantagens
@@ -128,7 +128,7 @@ function FinanciamentoImobiliario() {
           textAlign: "center"
         }}>
           <h2 style={{
-            fontSize: "40px",
+            fontSize: window.innerWidth < 768 ? "30px" : "40px",
             marginBottom: "40px"
           }}>
             Como Funciona
@@ -152,7 +152,7 @@ function FinanciamentoImobiliario() {
                 key={index}
                 style={{
                   background: "#eff6ff",
-                  padding: "28px",
+                  padding: window.innerWidth < 768 ? "22px" : "28px",
                   borderRadius: "18px",
                   fontWeight: "bold"
                 }}
@@ -172,7 +172,7 @@ function FinanciamentoImobiliario() {
           textAlign: "center"
         }}>
           <h2 style={{
-            fontSize: "42px",
+            fontSize: window.innerWidth < 768 ? "30px" : "42px",
             color:"white", 
 
 textShadow:"0 4px 10px rgba(0,0,0,0.18)",
@@ -187,11 +187,11 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
             style={{
               background: "#25D366",
               color: "white",
-              padding: "18px 34px",
+              padding: window.innerWidth < 768 ? "14px 24px" : "18px 34px",
               borderRadius: "10px",
               textDecoration: "none",
               fontWeight: "bold",
-              fontSize: "20px"
+              fontSize: window.innerWidth < 768 ? "16px" : "20px"
             }}
           >
             Simular Meu Financiamento
