@@ -15,16 +15,16 @@ function Navbar() {
       }}
     >
       <div
-        style={{
-          maxWidth: "1280px",
-          margin: "0 auto",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: "18px",
-          flexWrap: "nowrap"
-        }}
-      >
+  style={{
+    maxWidth: "1280px",
+    margin: "0 auto",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: "18px",
+    flexWrap: window.innerWidth < 768 ? "wrap" : "nowrap"
+  }}
+>
 
         {/* LOGO */}
         <Link
@@ -73,7 +73,7 @@ function Navbar() {
   color: "#e2e8f0",
   textDecoration: "none",
   fontWeight: "600",
-  fontSize: window.innerWidth < 768 ? "12px" : "15px",
+  fontSize: window.innerWidth < 768 ? "11px" : "15px",
   padding: window.innerWidth < 768 ? "4px 0" : "0",
   transition: "0.3s"
 }}
