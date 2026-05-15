@@ -85,7 +85,7 @@ function Home() {
     <section style={{
       background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
       color: "white",
-      padding: "90px 20px",
+      padding: window.innerWidth < 768 ? "55px 18px" : "90px 20px",
       textAlign: "center"
     }}>
       <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
@@ -99,13 +99,13 @@ function Home() {
         </p>
 
         <h1 style={{
-          fontSize: "52px",
-          color:"white", 
-
-textShadow:"0 4px 10px rgba(0,0,0,0.18)", 
-          lineHeight: "1.15",
-          margin: "20px 0"
-        }}>
+  fontSize: window.innerWidth < 768 ? "42px" : "52px",
+  color:"white",
+  textShadow:"0 4px 10px rgba(0,0,0,0.18)",
+  lineHeight: "1.15",
+  margin: "20px 0",
+  wordBreak: "break-word"
+}}>
           Crédito Inteligente com Segurança, Taxas Competitivas e Atendimento Consultivo
           <br />
         </h1>
