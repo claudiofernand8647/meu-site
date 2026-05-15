@@ -48,7 +48,7 @@ function Navbar() {
         {/* MENU */}
         <div
   style={{
-    display: window.innerWidth < 768 ? "none" : "flex",
+    display: "flex",
     gap: "22px",
     alignItems: "center",
     flexWrap: "wrap"
