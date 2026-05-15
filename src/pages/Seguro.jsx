@@ -19,7 +19,7 @@ function Seguro() {
         <section style={{
           background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
           color: "white",
-          padding: "110px 20px" ,
+          padding: window.innerWidth < 768 ? "60px 18px" : "110px 20px",
           textAlign: "center"
         }}>
           <div style={{ maxWidth: "980px", margin: "0 auto" }}>
@@ -33,7 +33,7 @@ function Seguro() {
             </p>
 
             <h1 style={{
-              fontSize: "54px",
+              fontSize: window.innerWidth < 768 ? "40px" : "54px",
               lineHeight: "1.15",
               margin: "20px 0",
               color: "white",
@@ -45,7 +45,7 @@ function Seguro() {
             </h1>
 
             <p style={{
-              fontSize: "24px",
+              fontSize: window.innerWidth < 768 ? "20px" : "24px",
               color: "#dbeafe",
               marginBottom: "35px"
             }}>
@@ -151,7 +151,7 @@ function Seguro() {
                 key={index}
                 style={{
                   background: "#eff6ff",
-                  padding: "28px",
+                  padding: window.innerWidth < 768 ? "22px" : "28px",
                   borderRadius: "18px",
                   fontWeight: "bold"
                 }}
@@ -171,7 +171,7 @@ function Seguro() {
           textAlign: "center"
         }}>
           <h2 style={{
-            fontSize: "42px",
+            fontSize: window.innerWidth < 768 ? "36px" : "42px",
             color:"white", 
 
 textShadow:"0 4px 10px rgba(0,0,0,0.18)", 

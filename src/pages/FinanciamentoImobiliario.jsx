@@ -19,7 +19,7 @@ function FinanciamentoImobiliario() {
         <section style={{
           background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
           color: "white",
-          padding: "110px 20px",
+          padding: window.innerWidth < 768 ? "60px 18px" : "110px 20px",
           textAlign: "center"
         }}>
           <div style={{ maxWidth: "980px", margin: "0 auto" }}>
@@ -33,7 +33,7 @@ function FinanciamentoImobiliario() {
             </p>
 
             <h1 style={{
-              fontSize: "54px",
+              fontSize: window.innerWidth < 768 ? "40px" : "54px",
               lineHeight: "1.15",
               margin: "20px 0",
               color: "white",
@@ -45,7 +45,7 @@ function FinanciamentoImobiliario() {
             </h1>
 
             <p style={{
-              fontSize: "24px",
+              fontSize: window.innerWidth < 768 ? "20px" : "24px",
               color: "#dbeafe",
               marginBottom: "35px"
             }}>

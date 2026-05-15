@@ -19,7 +19,7 @@ function CreditoImovel() {
         <section style={{
           background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
           color: "white",
-          padding: "110px 20px",
+          padding: window.innerWidth < 768 ? "60px 18px" : "110px 20px",
           textAlign: "center"
         }}>
           <div style={{ maxWidth: "950px", margin: "0 auto" }}>
