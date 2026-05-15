@@ -47,13 +47,13 @@ function Navbar() {
 
         {/* MENU */}
         <div
-          style={{
-            display: "flex",
-            gap: "22px",
-            alignItems: "center",
-            flexWrap: "wrap"
-          }}
-        >
+  style={{
+    display: window.innerWidth < 768 ? "none" : "flex",
+    gap: "22px",
+    alignItems: "center",
+    flexWrap: "wrap"
+  }}
+>
           {[
             ["Crédito com Garantia", "/credito-com-garantia-de-imovel"],
             ["Financiamento", "/financiamento-imobiliario"],
