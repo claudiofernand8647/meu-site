@@ -523,7 +523,7 @@ lineHeight: window.innerWidth < 768 ? "1.6" : "1.8",
 <section style={{
   background: "linear-gradient(135deg,#0f172a,#1e3a8a)",
   color: "white",
-  padding: "90px 20px",
+  padding: window.innerWidth < 768 ? "60px 20px" : "90px 20px",
   textAlign: "center"
 }}>
   <div style={{
@@ -541,7 +541,7 @@ lineHeight: window.innerWidth < 768 ? "1.6" : "1.8",
     </p>
 
     <h2 style={{
-      fontSize: "48px",
+      fontSize: window.innerWidth < 768 ? "36px" : "48px",
       color:"white", 
 
 textShadow:"0 4px 10px rgba(0,0,0,0.18)", 
@@ -554,7 +554,7 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
     </h2>
 
     <p style={{
-      fontSize: "22px",
+      fontSize: window.innerWidth < 768 ? "18px" : "22px",
       color: "#dbeafe",
       marginBottom: "35px"
     }}>
@@ -567,11 +567,12 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
       style={{
         background: "#25D366",
         color: "white",
-        padding: "18px 34px",
+        padding: window.innerWidth < 768 ? "14px 24px" : "18px 34px",
         borderRadius: "10px",
         textDecoration: "none",
         fontWeight: "bold",
-        fontSize: "22px",
+        fontSize: window.innerWidth < 768 ? "18px" : "22px",
+        lineHeight: "1.2",
         display: "inline-block",
         boxShadow: "0 15px 30px rgba(0,0,0,0.18)"
       }}
