@@ -45,7 +45,7 @@ function Footer() {
     }}
   >
     Telefone / WhatsApp
-(11) 93373-9876
+(11) 97178-1894
   </a>
 
   <p>📧 claudio.silva@creditomultibancos.com.br</p>
