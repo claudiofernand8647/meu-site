@@ -95,7 +95,7 @@ flexWrap: window.innerWidth < 768 ? "wrap" : "nowrap",    scrollbarWidth: "none"
           {/* CTA */}
           {window.innerWidth >= 768 && (
   <a
-            href="https://wa.me/55971781894"
+            href="https://wa.me/5511971781894"
             target="_blank"
             style={{
   background: "#25D366",

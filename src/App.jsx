@@ -562,7 +562,7 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
     </p>
 
     <a
-      href="https://wa.me/55971781894"
+      href="https://wa.me/5511971781894"
       target="_blank"
       style={{
         background: "#25D366",
@@ -614,7 +614,7 @@ function App() {
 
         <Footer />
         <a
-  href="https://wa.me/55971781894"
+  href="https://wa.me/5511971781894"
   target="_blank"
   rel="noopener noreferrer"
   onClick={() => {
