@@ -54,7 +54,7 @@ function Consorcio() {
             </p>
 
             <a
-              href="https://wa.me/5511933739876"
+              href="https://wa.me/55971781894"
               target="_blank"
               style={{
                 background: "#25D366",
@@ -185,7 +185,7 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
           </h2>
 
           <a
-            href="https://wa.me/5511933739876"
+            href="https://wa.me/55971781894"
             target="_blank"
             style={{
               background: "#25D366",

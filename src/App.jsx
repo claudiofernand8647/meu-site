@@ -68,7 +68,7 @@ function Home() {
   "@type": "FinancialService",
   "name": "Crédito Multi Bancos",
   "url": "https://www.creditomultibancos.com.br/",
-  "telephone": "+55 11 93373-9876",
+  "telephone": "+55 11 97178-1894",
   "areaServed": "Brasil",
   "description": "Especialistas em empréstimo consignado, FGTS, financiamento imobiliário e crédito com garantia de imóvel.",
   "sameAs": [
@@ -562,7 +562,7 @@ textShadow:"0 4px 10px rgba(0,0,0,0.18)",
     </p>
 
     <a
-      href="https://wa.me/5511933739876"
+      href="https://wa.me/55971781894"
       target="_blank"
       style={{
         background: "#25D366",
@@ -614,7 +614,7 @@ function App() {
 
         <Footer />
         <a
-  href="https://wa.me/5511933739876"
+  href="https://wa.me/55971781894"
   target="_blank"
   rel="noopener noreferrer"
   onClick={() => {
